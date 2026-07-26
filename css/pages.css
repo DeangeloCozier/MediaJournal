@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #343434;
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 63px; /* Must match sidebar width */
+  padding: 20px;
+}

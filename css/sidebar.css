@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed; /* Keeps it fixed on the screen */
+  top: 0; /* Aligns to the top edge of the sidebar to the top of the viewport */
+  left: 0; /* Aligns the left edge of the sidebar to the left of the viewport */
+  width: 63px;
+  height: 100vh; /* Full viewport height */
+  background-color: #343434; 
+  color: white;
+  padding: 10px;
+  box-sizing: border-box; /* Includes padding in width */
+  overflow-y: auto; /* Scroll if sidebar content is too long */
+  border-right: 2px solid #737373; 
+  
+}
+
+.separator{
+  padding: 5px 5px;
+  border-bottom: 2px solid #737373;
+}
+
+.sidebar svg {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  display: block;
+  padding: 5px 5px;
+}
+
+.sidebar-bottom{
+  padding: 5px 0px;
+}
+
+.sidebar svg:hover {
+  background-color: #555;
+  border-radius: 10px
+}
