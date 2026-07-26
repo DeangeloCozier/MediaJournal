@@ -16,7 +16,7 @@ const movies = [
 
 function renderMovies() {
 
-    const container = document.getElementById("movie-container");
+    const container = document.getElementById("container");
 
     // Clear the container
     container.innerHTML = "";
@@ -47,7 +47,7 @@ function addMovie(movie) {
 function createMovieCard(movie){
 
     return `
-        <div class="movie-card">
+        <div class="card">
 
             <img src="${movie.poster}" alt="${movie.title}">
 
