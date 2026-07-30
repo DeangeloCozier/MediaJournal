@@ -42,3 +42,9 @@ h2 {
   font-size: 28px;
   color: white;
 }
+
+#movie-container, #show-container, #game-container, #book-container, #song-container,
+#favorite-container { 
+    display:flex;
+    gap:20px;
+}
