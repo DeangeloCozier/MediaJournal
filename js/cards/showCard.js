@@ -24,9 +24,15 @@ function createShowCard(show) {
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(show.rating)}">
-                        ${show.rating.toFixed(1)}
-                    </span>
+                    ${
+                        show.rating == null
+                        ? `<span class="rating ${getRatingClass(show.rating)}">
+                                -.-
+                            </span>`
+                        :  `<span class="rating ${getRatingClass(show.rating)}">
+                                ${show.rating.toFixed(1)}
+                            </span>`
+                    }
 
                 </div>
             

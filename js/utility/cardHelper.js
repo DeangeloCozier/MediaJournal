@@ -50,6 +50,7 @@ function getMediaClass(type) {
 }
 
 function getRatingClass(rating) {
+    if (rating == null) return "unrated";
     if (rating < 4) return "ratingLow";
     return `rating${Math.floor(rating)}`;
 }

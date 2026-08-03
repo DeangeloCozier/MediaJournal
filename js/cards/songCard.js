@@ -24,9 +24,15 @@ function createSongCard(song){
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(song.rating)}">
-                        ${song.rating.toFixed(1)}
-                    </span>
+                    ${
+                        song.rating == null
+                        ? `<span class="rating ${getRatingClass(song.rating)}">
+                                -.-
+                            </span>`
+                        :  `<span class="rating ${getRatingClass(song.rating)}">
+                                ${song.rating.toFixed(1)}
+                            </span>`
+                    }
 
                 </div>
 

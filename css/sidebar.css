@@ -19,7 +19,7 @@
 }
 
 .sidebar svg {
-  color: white;
+  color: var(--iconColor);
   text-decoration: none;
   justify-content: center;
   width: 32px;
@@ -35,4 +35,12 @@
 .sidebar svg:hover {
   background-color: #555;
   border-radius: 10px
+}
+
+.highlightedIcon svg{
+  color: var(--iconHighlightedColor);
+}
+
+.highlightedIcon svg:hover{
+  background-color: transparent;
 }

@@ -24,9 +24,15 @@ function createGameCard(game) {
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(game.rating)}">
-                        ${game.rating.toFixed(1)}
-                    </span>
+                    ${
+                        game.rating == null
+                        ? `<span class="rating ${getRatingClass(game.rating)}">
+                                -.-
+                            </span>`
+                        :  `<span class="rating ${getRatingClass(game.rating)}">
+                                ${game.rating.toFixed(1)}
+                            </span>`
+                    }
 
                 </div>
             

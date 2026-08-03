@@ -24,9 +24,15 @@ function createFavoriteCard(media){
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(media.rating)}">
-                        ${media.rating.toFixed(1)}
-                    </span>
+                    ${
+                        media.rating == null
+                        ? `<span class="rating ${getRatingClass(media.rating)}">
+                                -.-
+                            </span>`
+                        :  `<span class="rating ${getRatingClass(media.rating)}">
+                                ${media.rating.toFixed(1)}
+                            </span>`
+                    }
 
                 </div>
 

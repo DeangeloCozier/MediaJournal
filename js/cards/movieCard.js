@@ -24,9 +24,15 @@ function createMovieCard(movie) {
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(movie.rating)}">
-                        ${movie.rating.toFixed(1)}
-                    </span>
+                    ${
+                        movie.rating == null
+                        ? `<span class="rating ${getRatingClass(movie.rating)}">
+                                -.-
+                            </span>`
+                        :  `<span class="rating ${getRatingClass(movie.rating)}">
+                                ${movie.rating.toFixed(1)}
+                            </span>`
+                    }
 
                 </div>
 

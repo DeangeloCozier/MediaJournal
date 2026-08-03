@@ -22,7 +22,7 @@ const games = [
 
         progress: 0,          // 0-100
         favorite: false,
-        rating: 0.0
+        rating: null
     },
 
     {

@@ -38,5 +38,4 @@ renderCards(
     "favorite-container",
     createFavoriteCard,
     "Add New Entity"
-
 );

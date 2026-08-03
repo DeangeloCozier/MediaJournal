@@ -1,66 +1,3 @@
-:root{
-  --primaryColor: #343434;
-
-  /* =================================
-       MEDIA CLASSIFCATION COLORS
-     =================================*/
-
-  --gameColor: #6a4c93;
-  --tvColor: #1982c4;
-  --musicColor: #720d10;
-  --bookColor: #4b4a4a;
-  --movieColor: #8ac926;
-
-  /*============================================
-          MEDIA TYPE CLASSIFICATION COLORS
-    ============================================*/
-
-  /*--------------TV Shows/Movies---------------*/
-  --animationColor: #7a4900;
-  --liveActionColor: #561269;
-  --animeColor: #00167a;
-
-  /*-------------------Books--------------------*/
-  --mangaColor: #7849b8;
-  --novelColor: #009dd6;
-  --novellaColor: #f2609e;
-  --comicColor: #ec111a;
-  --shortStoryColor: #ffd42f;
-  --manhwaColor: #138468;
-  --lightNovelColor: #fb6330;
-
-  /*-------------------Music--------------------*/
-  --albumColor:#086d7a;
-  --epColor: #58064b;
-  --singleColor: #007f4e;
-  --mixtapeColor: #f8cc1b;
-  --soundtrackColor: #f37324;
-
-  /*-------------------Games--------------------*/
-  --mainGameColor: #5e4fa2;
-  --dlcColor: #3288bd;
-  --expansionColor: #66c2a5;
-  --spinOffColor: #e6f598;
-  --remakeColor: #fee08b;
-  --remasterColor: #fdae61;
-  --rebootColor: #f46d43;
-  --collectionColor: #d53e4f;
-  --fanMadeColor: #abdda4;
-  --demoColor: #9e0142;
-
-  /*============================================
-            RATING CLASSIFICATION COLORS
-    ============================================*/
-
-  --rating9Color: #007a3f;
-  --rating8Color: #298a00;
-  --rating7Color: #457a00;
-  --rating6Color: #7a6200;
-  --rating5Color: #915803;
-  --rating4Color: #ac2901;
-  --ratingLowColor: #690000;
-}
-
 @font-face {
     font-family: 'Oswald';
     font-weight: 300;
@@ -113,5 +50,5 @@ h2 {
 #movie-container, #show-container, #game-container, #book-container, #song-container,
 #favorite-container { 
   display:flex;
-  gap: 15px;
+  gap: var(--cardGap);
 }

@@ -24,10 +24,14 @@ function createBookCard(book){
                            </span>`
                     }
 
-                    <span class="rating ${getRatingClass(book.rating)}">
-                        ${book.rating.toFixed(1)}
-                    </span>
-
+                    ${
+                        book.rating == null
+                        ? `-.-`
+                        :  `<span class="rating ${getRatingClass(book.rating)}">
+                                ${book.rating.toFixed(1)}
+                            </span>`
+                    }
+                    
                 </div>
 
                 <img src="${book.poster}" alt="${book.title}">
