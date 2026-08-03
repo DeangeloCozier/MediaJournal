@@ -1,7 +1,17 @@
 .card {
     width:180px;
     margin-top:0;
+
+    cursor: pointer;       /* Changes cursor to a hand icon */
+    user-select: none;     /* Prevents text highlighting on rapid clicks */
+    transition: opacity 0.2s;
 }
+
+.card:hover{
+    opacity: 0.5; 
+    transform:translateY(-4px);
+}
+
 
 .card img{
     width:180px;
@@ -9,15 +19,59 @@
     object-fit:cover;
     border-radius:20px;
     display:block;
-    
-    cursor: pointer;       /* Changes cursor to a hand icon */
-    user-select: none;     /* Prevents text highlighting on rapid clicks */
-    transition: opacity 0.2s;
 }
 
-.card img:hover{
-    opacity: 0.5; 
+.cardOverlay{
+    position:relative;
 }
+
+.rightIcons{
+    position:absolute;
+    top:15px;
+    right:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 2px;
+    padding: 2px 4px;
+
+    border-radius: 4px;
+    font-size: 8px;
+}
+
+.favoriteTrue, .favoriteFalse{
+    color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 18px;
+    height: 18px;
+}
+
+.favoriteFalse{
+    color:grey;
+}
+
+
+.leftIcons{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
 
 .card p{
     text-align:center;
@@ -58,3 +112,131 @@
     text-align:center;
     font-size:18px;
 }
+
+.mainType{
+    padding:3px 8px;
+    border-radius:8px;
+    font-size:8px;
+}
+
+.progress{
+    position:absolute;
+    bottom:7px;
+    left:10px;
+    right:10px;
+    height:2px;
+    background:#919191;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.progress-fill{
+    height:100%;
+    background:#7ed957;
+    border-radius:5px;
+}
+
+.mediaType{
+    padding:3px 8px;
+    border-radius:8px;
+    color:white;
+    font-size:8px;
+} 
+
+/* =================================
+       MEDIA CLASSIFCATION COLORS
+   =================================*/
+
+.game{ background: var(--gameColor); }
+
+.tv{ background: var(--tvColor); }
+
+.music{ background: var(--musicColor); }
+
+.book{ background: var(--bookColor); }
+
+.movie{ background: var(--movieColor); }
+
+/* ============================================
+       TV SHOW/MOVIE CLASSIFCATION COLORS
+   ===========================================*/
+
+.animation{ background: var(--animationColor); }
+
+.liveAction{ background: var(--liveActionColor); }
+
+.anime{ background: var(--animeColor); }
+
+/* =================================
+       BOOK CLASSIFCATION COLORS
+   =================================*/
+
+.manga{ background: var(--mangaColor); }
+
+.novel{ background: var(--novelColor); }
+
+.novella{ background: var(--novellaColor); }
+
+.comic{ background: var(--comicColor); }
+
+.shortStory{ background: var(--shortStoryColor); }
+
+.manhwa{ background: var(--manhwaColor); }
+
+.lightNovel{ background: var(--lightNovelColor); }
+
+/* =================================
+       MUSIC CLASSIFCATION COLORS
+   =================================*/
+
+.album{ background: var(--albumColor); }
+
+.ep{ background: var(--epColor); }
+
+.single{ background: var(--singleColor); }
+
+.mixtape{ background: var(--mixtapeColor); }
+
+.soundtrack{ background: var(--soundtrackColor); }
+
+/* =================================
+       GAME CLASSIFCATION COLORS
+   =================================*/
+
+.mainGame{ background: var(--mainGameColor); }
+
+.dlc{ background: var(--dlcColor); }
+
+.expansion{ background: var(--expansionColor); }
+
+.spinOff{ background: var(--spinOffColor); }
+
+.remake{ background: var(--remakeColor); }
+
+.remaster{ background: var(--remasterColor); }
+
+.reboot{ background: var(--rebootColor); }
+
+.collection{ background: var(--collectionColor); }
+
+.fanMade{ background: var(--fanMadeColor); }
+
+.demo{ background: var(--demoColor); }
+
+/* =================================
+       RATING CLASSIFCATION COLORS
+   =================================*/
+
+.rating9{ background: var(--rating9Color); }
+
+.rating8{ background: var(--rating8Color); }
+
+.rating7{ background: var(--rating7Color); }
+
+.rating6{ background: var(--rating6Color); }
+
+.rating5{ background: var(--rating5Color); }
+
+.rating4{ background: var(--rating4Color); }
+
+.ratingLow{ background: var(--ratingLowColor); }

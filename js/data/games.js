@@ -5,7 +5,7 @@ const games = [
         poster: "../assets/posters/skyrim.jpg",
         createdAt: "2026-07-01",
         mediaType: "Game",
-        mainType: "Game",
+        mainType: "Main Game",
 
         progress: 50,          // 0-100
         favorite: true,
@@ -18,7 +18,7 @@ const games = [
         poster: "../assets/posters/dyinglight.jpg",
         createdAt: "2026-07-03",
         mediaType: "Game",
-        mainType: "Game",
+        mainType: "Main Game",
 
         progress: 0,          // 0-100
         favorite: false,
@@ -31,7 +31,7 @@ const games = [
         poster: "../assets/posters/blaphemous.jpg",
         createdAt: "2026-07-02",
         mediaType: "Game",
-        mainType: "Game",
+        mainType: "Main Game",
 
         progress: 75,          // 0-100
         favorite: true,
@@ -44,7 +44,7 @@ const games = [
         poster: "../assets/posters/batmanaa.jpg",
         createdAt: "2026-07-07",
         mediaType: "Game",
-        mainType: "Game",
+        mainType: "Main Game",
 
         progress: 72,          // 0-100
         favorite: true,
@@ -57,7 +57,7 @@ const games = [
         poster:"../assets/posters/minecraft.jpg",
         createdAt: "2026-07-06",
         mediaType: "Game",
-        mainType: "Game",
+        mainType: "Main Game",
 
         progress: 23,          // 0-100
         favorite: false,

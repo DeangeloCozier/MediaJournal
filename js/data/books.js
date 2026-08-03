@@ -31,7 +31,7 @@ const books = [
         poster: "../assets/posters/StayOutoftheBasement.jpg",
         createdAt: "2026-07-09",
         mediaType: "Book",
-        mainType: "Book",
+        mainType: "Novel",
 
         progress: 100,          // 0-100
         favorite: true,
@@ -44,7 +44,7 @@ const books = [
         poster: "../assets/posters/MonsterBlood.jpg",
         createdAt: "2026-07-01",
         mediaType: "Book",
-        mainType: "Book",
+        mainType: "Novel",
 
         progress: 75,          // 0-100
         favorite: true,
@@ -57,7 +57,7 @@ const books = [
         poster: "../assets/posters/WelcometoDeadHouse.jpg",
         createdAt: "2026-07-02",
         mediaType: "Book",
-        mainType: "Book",
+        mainType: "Novel",
 
         progress: 100,          // 0-100
         favorite: true,

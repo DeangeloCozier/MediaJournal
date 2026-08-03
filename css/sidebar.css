@@ -4,7 +4,7 @@
   left: 0; /* Aligns the left edge of the sidebar to the left of the viewport */
   width: 63px;
   height: 100vh; /* Full viewport height */
-  background-color: #343434; 
+  background-color: var(--primaryColor); 
   color: white;
   padding: 10px;
   box-sizing: border-box; /* Includes padding in width */
