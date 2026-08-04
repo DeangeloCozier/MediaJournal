@@ -1,4 +1,4 @@
-function renderCards(data, containerId, createCard, addCardText) {
+function renderHomeCards(data, containerId, createCard, addCardText) {
 
     const container = document.getElementById(containerId);
     
@@ -9,7 +9,7 @@ function renderCards(data, containerId, createCard, addCardText) {
     const cardsPerRow = getCardsPerRow(containerId);
 
     // Remember to reserve one slot for the Add card
-    const maxCards = Math.max(cardsPerRow, 0);
+    const maxCards = Math.max(cardsPerRow - 1, 0);
 
     const newest = [...data]
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
@@ -20,6 +20,26 @@ function renderCards(data, containerId, createCard, addCardText) {
     });
 
     container.innerHTML += createAddCard(addCardText);
+}
+
+function renderCollectionCards(data, containerId, createCard, addCardText) {
+
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    // Add card first
+    container.innerHTML += createAddCard(addCardText);
+
+    // Newest first
+    [...data]
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+        .forEach(item => {
+            container.innerHTML += createCard(item);
+        });
+
 }
 
 function createAddCard(text) {

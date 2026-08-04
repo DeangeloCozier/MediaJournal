@@ -1,6 +1,8 @@
 :root{
     --primaryColor: #343434;
 
+    --sidebarWidth: 63px;
+
     /*--------------Card Sizes---------------*/
 
     --cardWidth: 180px;

@@ -32,17 +32,57 @@ body {
 }
 
 /* Main Content Styling */
-.main-content {
-  margin-left: 63px; /* Must match sidebar width */
+.mainHomeContent {
+  margin-left: var(--sidebarWidth); /* Must match sidebar width */
   padding: 20px 50px;
 }
 
+.mainContent{
+  margin-left: var(--sidebarWidth); /* Must match sidebar width */
+  padding: 10px 10px;
+}
 
-h2 {
+.pageHeader{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.containerArea{
+  padding: 0px 35px;
+}
+
+.headerRight{
+  flex:1;                  /* Take all remaining space */
+  display:flex;
+  justify-content:flex-end; /* Push everything right */
+  align-items:center;
+  gap:15px;
+
+  margin-right: 0px
+}
+
+.headerIcons{
+  display: flex;
+  gap: 10px;
+  transform: translateY(27px);
+  margin-right: 50px
+}
+
+h2, .homeSections{
   font-family: 'Oswald',sans-serif;
   font-weight: 400;
-  font-size: 36px;
   color: white;
+}
+
+h2 {
+  font-size: 56px;
+  margin-top: 0; 
+  padding: 0px 20px;
+} 
+
+.homeSections h2{
+  font-size: 36px;
   margin-bottom: 0; 
   padding: 2px 0px;
 }
@@ -50,5 +90,69 @@ h2 {
 #movie-container, #show-container, #game-container, #book-container, #song-container,
 #favorite-container { 
   display:flex;
+  flex-wrap: wrap;
   gap: var(--cardGap);
+
+  align-content: flex-start;
+}
+
+.searchBar{
+  flex:1;                 /* Grow */
+  max-width:800px;        /* Never bigger than this */
+  min-width:250px;        /* Never smaller than this */
+  height:40px;
+  display:flex;
+  align-items:center;
+  background:white;
+  border-radius:12px;
+  transform: translateY(27px);
+}
+
+.searchBar input{
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding: 0 15px;
+
+    background: transparent;
+
+    color: var(--primaryColor);
+
+    font-size: 16px;
+    font-family: Oswald, sans-serif;
+
+}
+
+.searchBar input::placeholder {
+    color: var(--primaryColor);
+
+}
+
+.searchDivider {
+    width: 2px;
+    height: 100%;
+
+    background: var(--primaryColor);
+}
+
+.searchButton {
+
+    width: 52px;
+    height: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--primaryColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
 }

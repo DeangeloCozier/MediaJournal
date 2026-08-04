@@ -1,39 +1,39 @@
-renderCards(
+renderHomeCards(
     movies,
     "movie-container",
     createMovieCard,
     "Add New Movie"
 );
 
-renderCards(
+renderHomeCards(
     shows,
     "show-container",
     createShowCard,
     "Add New Show"
 );
 
-renderCards(
+renderHomeCards(
     games,
     "game-container",
     createGameCard,
     "Add New Game"
 );
 
-renderCards(
+renderHomeCards(
     books,
     "book-container",
     createBookCard,
     "Add New Book"
 );
 
-renderCards(
+renderHomeCards(
     songs,
     "song-container",
     createSongCard,
     "Add New Album/Single"
 );
 
-renderCards(
+renderHomeCards(
     [...movies, ...shows, ...games, ...books, ...songs],
     "favorite-container",
     createFavoriteCard,

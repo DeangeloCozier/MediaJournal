@@ -1,5 +1,7 @@
 function createMovieCard(movie) {
 
+    const poster = movie.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${movie.id}">
@@ -36,7 +38,7 @@ function createMovieCard(movie) {
 
                 </div>
 
-                <img src="${movie.poster}" alt="${movie.title}">
+                <img src="${poster}" alt="${movie.title}">
 
                 <div class="progress">
                     <div
