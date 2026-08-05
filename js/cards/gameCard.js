@@ -1,5 +1,7 @@
 function createGameCard(game) {
 
+    const poster = game.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${game.id}">
@@ -36,7 +38,7 @@ function createGameCard(game) {
 
                 </div>
             
-                <img src="${game.poster}" alt="${game.title}">
+                <img src="${poster}" alt="${game.title}">
 
                 <div class="progress">
                     <div

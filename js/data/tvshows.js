@@ -70,11 +70,24 @@ const shows = [
         poster: "../assets/posters/twd.jpg",
         createdAt: "2026-07-04",
         mediaType: "TV Show",
-        mainType: "Manga",
+        mainType: "Live Action",
 
         progress: 45,          // 0-100
         favorite: false,
         rating: 7.2
+    },
+
+    {
+        id: 7,
+        title: "Fullmetal Alchemist: Botherhood",
+        poster: "",
+        createdAt: "2026-07-01",
+        mediaType: "TV Show",
+        mainType: "Anime",
+
+        progress: 100,
+        favorite: true,
+        rating: 9.6
     }
 ]
 

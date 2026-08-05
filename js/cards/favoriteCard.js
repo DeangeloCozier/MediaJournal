@@ -1,5 +1,7 @@
 function createFavoriteCard(media){
 
+    const poster = media.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${media.id}">
@@ -36,7 +38,7 @@ function createFavoriteCard(media){
 
                 </div>
 
-                <img src="${media.poster}" alt="${media.title}">
+                <img src="${poster}" alt="${media.title}">
 
                 <div class="progress">
                     <div

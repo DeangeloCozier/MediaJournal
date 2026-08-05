@@ -1,5 +1,7 @@
 function createBookCard(book){
     
+    const poster = book.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${book.id}">
@@ -34,7 +36,7 @@ function createBookCard(book){
                     
                 </div>
 
-                <img src="${book.poster}" alt="${book.title}">
+                <img src="${poster}" alt="${book.title}">
 
                 <div class="progress">
                     <div

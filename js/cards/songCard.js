@@ -1,5 +1,7 @@
 function createSongCard(song){
     
+    const poster = song.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${song.id}">
@@ -36,7 +38,7 @@ function createSongCard(song){
 
                 </div>
 
-                <img src="${song.poster}" alt="${song.title}">
+                <img src="${poster}" alt="${song.title}">
 
                 <div class="progress">
                     <div

@@ -62,6 +62,46 @@ const games = [
         progress: 23,          // 0-100
         favorite: false,
         rating: 9.2
+    },
+
+    {
+        id: 6, 
+        title: "Euro Truck Simulator",
+        poster: "",
+        createdAt: "2023-05-15",
+        mediaType: "Game",
+        mainType: "Main Game",
+        
+        progress: 23,
+        favorite: true,
+        rating: 9.2
+    }, 
+
+    {
+        id: 7,
+        title: "Portal 2",
+        poster: "",
+        createdAt: "2024-04-08",
+        mediaType: "Game",
+        mainType: "Main Game",
+
+        progress: 100,
+        favorite: true,
+        rating: 9.4
+    },
+
+    {
+        id: 8,
+        title: "Portal: Revolution",
+        poster: "",
+        createdAt: "2024-05-14",
+        mediaType: "Game",
+        mainType: "Fan Made",
+
+        progress: 50,
+        favorite: false,
+        rating: 6.7
     }
+
 ]
 

@@ -1,5 +1,7 @@
 function createShowCard(show) {
 
+    const poster = show.poster || "../assets/posters/default.svg";
+
     return `
 
         <div class="card" data-id="${show.id}">
@@ -36,7 +38,7 @@ function createShowCard(show) {
 
                 </div>
             
-                <img src="${show.poster}" alt="${show.title}">
+                <img src="${poster}" alt="${show.title}">
 
                 <div class="progress">
                     <div
