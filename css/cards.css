@@ -1,3 +1,7 @@
+  /*============================================
+                REGULAR GRID CARDS LAYOUT
+    ============================================*/
+
 .card {
     width: var(--cardWidth);
     margin-top:0;
@@ -12,7 +16,6 @@
     transform:translateY(-4px);
 }
 
-
 .card img{
     width: var(--cardWidth);
     height: var(--cardHeight);
@@ -21,8 +24,20 @@
     display:block;
 }
 
+/*--------------Regular Card Container for  Icons (Media/Main Type, Rating and Favorite)---------------*/
+
 .cardOverlay{
     position:relative;
+}
+
+.leftIcons{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
 }
 
 .rightIcons{
@@ -34,6 +49,174 @@
     align-items:center;
     gap:4px;
 }
+
+/*--------------Card Text Under Regular Card---------------*/
+
+.card p{
+    text-align:center;
+    font-size:18px;
+
+    display: -webkit-box; 
+
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: 300px; 
+
+    margin: 4px 0 0;
+    line-height: 1.2;
+}
+
+  /*=======================================================
+                REGULAR GRID ADD MEDIA CARDS LAYOUT
+    =======================================================*/
+
+.add-card img{
+    width: 80px;      
+    height: 80px;
+}
+
+.add-card{
+    width: var(--cardWidth);
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-radius:20px;
+    cursor:pointer;
+
+    background-image: linear-gradient(to right, #888888, #000000);
+}
+
+/*--------------Add Card Text Under Regular Card---------------*/
+
+.add-card p{
+    text-align:center;
+    font-size:18px;
+}
+
+  /*============================================
+                SMALL GRID CARDS LAYOUT
+    ============================================*/
+
+.smallGridCard {
+    width: 250px; /* Fixed width to control the card size */
+    height: 80px;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertical centering */
+    justify-content: left; /* Horizontal centering of the inner container */
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.2s;
+    gap: 20px; /* Adds space between image and text */
+    /* border: 1px solid #ccc; Optional: for visual clarity  */
+    /* background-color: #f9f9f9;  */
+}
+
+.smallGridCard:hover {
+    opacity: 0.5; 
+    transform:translateY(-4px);
+}
+
+.smallGridCard img{
+    width: 50px;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 12px;
+}
+
+
+/*--------------Alignment(top of container) for Favorites, Rating and Media/Main Types--------------*/
+
+.smallGridTopIcons .favoriteTrue, .smallGridTopIcons .favoriteFalse, .smallGridTopIcons .rating, .smallGridTopIcons .mainType {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*--------------Top Container for Favorites, Rating and Media/Main Types--------------*/
+
+.smallGridTopIcons{
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; 
+    gap: 8px;
+    transform: translate( 0px, 15px );
+
+}
+
+/*--------------Middle Container for Card Title--------------*/
+
+.smallGridCardText {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.smallGridCardText p{
+    margin-left: 0;
+    font-size: 25px; /* Adjusted for readability */
+    transform: translate( 0px, -8px );
+
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: 250px; 
+}
+
+/*--------------Bottom Container for Progress Bar--------------*/
+
+.smallGridBottomIcons{
+    position: relative;
+    width: 180px;
+    transform: translate( -10px, -10px );
+}
+
+/*=======================================================
+                SMALL GRID ADD MEDIA CARDS LAYOUT
+=======================================================*/
+
+.addSmallGridCard{
+    width: 50px;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(to right, #888888, #000000);
+    border-radius: 12px;
+}
+
+.addSmallGridCard img{
+    width: 25px;
+    height: 25px;
+}
+
+/*--------------Add Card Text Under Small Card---------------*/
+
+.smallGridAddCardText {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.smallGridAddCardText p{
+    font-size: 25px; /* Adjusted for readability */
+    margin-left: 0;
+}
+
+/*=======================================================
+                    CARD ICONS
+=======================================================*/
 
 .rating{
     display: flex;
@@ -61,57 +244,12 @@
     color:grey;
 }
 
-
-.leftIcons{
-    position:absolute;
-    top:15px;
-    left:15px;
-
-    display:flex;
-    flex-direction:column;
-    gap:4px;
-}
-
-
-.card p{
-    text-align:center;
-    font-size:18px;
-
-    display: -webkit-box; 
-
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    max-width: 300px; 
-
-    margin: 4px 0 0;
-    line-height: 1.2;
-}
-
-.add-card{
-    width: var(--cardWidth);
-    height:250px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    border-radius:20px;
-    cursor:pointer;
-
-    background-image: linear-gradient(to right, #888888, #000000);
-}
-
-.add-card img{
-    width: 80px;      
-    height: 80px;
-}
-
-.add-card p{
-    text-align:center;
-    font-size:18px;
-}
+.mediaType{
+    padding:3px 8px;
+    border-radius:8px;
+    color:white;
+    font-size:8px;
+} 
 
 .mainType{
     padding:3px 8px;
@@ -135,13 +273,6 @@
     background:#7ed957;
     border-radius:5px;
 }
-
-.mediaType{
-    padding:3px 8px;
-    border-radius:8px;
-    color:white;
-    font-size:8px;
-} 
 
 /* =================================
        MEDIA CLASSIFCATION COLORS

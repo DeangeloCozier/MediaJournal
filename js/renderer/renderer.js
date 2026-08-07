@@ -22,7 +22,7 @@ function renderHomeCards(data, containerId, createCard, addCardText) {
     container.innerHTML += createAddCard(addCardText);
 }
 
-function renderCollectionCards(data, containerId, createCard, addCardText) {
+function renderCollectionCards(data, containerId, createCard, addCardText, addCard) {
 
     const container = document.getElementById(containerId);
 
@@ -31,7 +31,7 @@ function renderCollectionCards(data, containerId, createCard, addCardText) {
     container.innerHTML = "";
 
     // Add card first
-    container.innerHTML += createAddCard(addCardText);
+    container.innerHTML += addCard(addCardText);
 
     // Newest first
     [...data]
@@ -50,6 +50,21 @@ function createAddCard(text) {
                 <img src="../assets/icons/addentity.svg" alt="+">
             </div>
             <p>${text}</p>
+        </div>
+    `;
+
+}
+
+function createAddSmallGridCard(text) {
+
+    return `
+        <div class="smallGridCard">
+            <div class="addSmallGridCard">
+                <img src="../assets/icons/addentity.svg" alt="+">
+            </div>
+            <div class="smallGridAddCardText">
+                <p>${text}</p>
+            </div>
         </div>
     `;
 

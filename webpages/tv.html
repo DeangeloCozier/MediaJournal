@@ -71,9 +71,11 @@
                     </div>
                 </div>
                 <div class="headerIcons">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 10.58 10.58"><path d="M2.07.51a.4.4 0 0 0-.4.4v3.98H.9a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.36a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78V.91a.4.4 0 0 0-.4-.4m3.22.02a.4.4 0 0 0-.4.4v1.85h-.78a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.36a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78V.93a.4.4 0 0 0-.4-.4m3.18.13a.4.4 0 0 0-.4.4v5.69h-.78a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.35a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78v-5.7a.4.4 0 0 0-.4-.39M5.29 4.24a.4.4 0 0 0-.4.4v5a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4v-5a.4.4 0 0 0-.4-.4M2.11 6.32a.4.4 0 0 0-.4.4v2.95a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4V6.72a.4.4 0 0 0-.4-.4m6.36 1.89a.4.4 0 0 0-.4.4v1.1a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4v-1.1a.4.4 0 0 0-.4-.4" style="stop-opacity:1;stop-color:currentColor;stroke-opacity:1;stroke-linecap:round;stroke:none;fill-opacity:1;fill:currentColor;vector-effect:none;opacity:1;overflow:visible;display:inline;baseline-shift:baseline"/></svg>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 10.58 10.58"><path d="M1.45.92a.53.53 0 0 0-.53.53V4.1a.53.53 0 0 0 .53.53H4.1a.53.53 0 0 0 .53-.53V1.45A.53.53 0 0 0 4.1.92zm5.03 0a.53.53 0 0 0-.53.53V4.1a.53.53 0 0 0 .53.53h2.66a.53.53 0 0 0 .52-.53V1.45a.53.53 0 0 0-.52-.53zM1.45 5.95a.53.53 0 0 0-.53.53v2.66a.53.53 0 0 0 .53.52H4.1a.53.53 0 0 0 .53-.52V6.48a.53.53 0 0 0-.53-.53zm5.03 0a.53.53 0 0 0-.53.53v2.66a.53.53 0 0 0 .53.52h2.66a.53.53 0 0 0 .52-.52V6.48a.53.53 0 0 0-.52-.53z" style="paint-order:stroke markers fill;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:square;stroke-width:.779274;stroke:currentColor;fill:none"/></svg>
+                    <button class="headerButtonFilter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 10.58 10.58"><path d="M2.07.51a.4.4 0 0 0-.4.4v3.98H.9a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.36a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78V.91a.4.4 0 0 0-.4-.4m3.22.02a.4.4 0 0 0-.4.4v1.85h-.78a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.36a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78V.93a.4.4 0 0 0-.4-.4m3.18.13a.4.4 0 0 0-.4.4v5.69h-.78a.4.4 0 0 0-.4.4.4.4 0 0 0 .4.4h2.35a.4.4 0 0 0 .4-.4.4.4 0 0 0-.4-.4h-.78v-5.7a.4.4 0 0 0-.4-.39M5.29 4.24a.4.4 0 0 0-.4.4v5a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4v-5a.4.4 0 0 0-.4-.4M2.11 6.32a.4.4 0 0 0-.4.4v2.95a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4V6.72a.4.4 0 0 0-.4-.4m6.36 1.89a.4.4 0 0 0-.4.4v1.1a.4.4 0 0 0 .4.4.4.4 0 0 0 .4-.4v-1.1a.4.4 0 0 0-.4-.4" style="stop-opacity:1;stop-color:currentColor;stroke-opacity:1;stroke-linecap:round;stroke:none;fill-opacity:1;fill:currentColor;vector-effect:none;opacity:1;overflow:visible;display:inline;baseline-shift:baseline"/></svg>
+                    </button>
+
+                    <div id="viewToggle" class="headerButtonToggle"></div>
                 </div>
             </div>
 
@@ -90,6 +92,7 @@
 
         <script src="../js/data/tvshows.js"></script>
         <script src="../js/events/search.js"></script>
+        <script src="../js/events/viewClick.js"></script>
         <script src="../js/renderer/showApp.js"></script>
 
     <body>

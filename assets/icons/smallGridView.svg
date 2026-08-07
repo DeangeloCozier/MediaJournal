@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 10.583333 10.583333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   sodipodi:docname="smallGridView.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect7"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.52916665,0,1 @ F,0,0,1,0,0.52916665,0,1 @ F,0,0,1,0,0.52916665,0,1 @ F,0,0,1,0,0.52916665,0,1"
+       radius="2"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.3"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-4.2931483"
+     inkscape:cy="18.814091"
+     inkscape:document-units="px"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:window-width="1870"
+     inkscape:window-height="1011"
+     inkscape:window-x="1970"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458332"
+       spacingy="0.26458332"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="paint-order:stroke markers fill;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:square;stroke-width:0.643467;stroke:currentColor;fill:none;"
+     id="rect2-5-3-5-6"
+     width="3.8015447"
+     height="2.134671"
+     x="0.85090584"
+     y="0.85089409"
+     inkscape:path-effect="#path-effect7"
+     sodipodi:type="rect"
+     d="M 1.3800725,0.85089409 H 4.1232839 A 0.52916665,0.52916665 45 0 1 4.6524505,1.3800607 V 2.4563984 A 0.52916665,0.52916665 135 0 1 4.1232839,2.9855651 H 1.3800725 A 0.52916665,0.52916665 45 0 1 0.85090584,2.4563984 V 1.3800607 A 0.52916665,0.52916665 135 0 1 1.3800725,0.85089409 Z" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect2-5-3-5-6"
+     id="use3"
+     transform="translate(5.0799821)"
+     style="stroke-width:0.79374997;stroke-dasharray:none" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect2-5-3-5-6"
+     id="use4"
+     transform="translate(5.0799823,3.3734369)" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect2-5-3-5-6"
+     id="use5"
+     transform="translate(-5.6922436e-6,6.7468676)" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect2-5-3-5-6"
+     id="use6"
+     transform="translate(5.0799821,6.7468676)" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect2-5-3-5-6"
+     id="use7"
+     transform="translate(-5.6922436e-6,3.3734369)" />
+</svg>
