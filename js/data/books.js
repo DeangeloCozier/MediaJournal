@@ -15,7 +15,7 @@ const books = [
     {
         id:2,
         title: "Attack on Titan",
-        poster: "../assets/posters/AttackonTitan.jpg",
+        poster: "../assets/posters/AttackonTitanM.jpg",
         createdAt: "2026-07-07",
         mediaType: "Book",
         mainType: "Manga",

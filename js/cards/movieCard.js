@@ -114,3 +114,63 @@ function createMovieSmallGridCard(movie){
     `;
 
 }
+
+function createMovieSmallListCard(movie){
+
+    const poster = movie.poster || "../assets/posters/defaultList.svg";
+
+    return `
+
+        <div class="smallListCard" dataID="${movie.id}">
+            
+            <img src="${poster}" alt="${movie.title}">
+
+            <div class="smallListCardInformation">
+                <div class="smallListCardAlignment">
+                    <div class="smallListContainer">
+                        <div class="smallListColumn">
+
+                            <p class="smallListTitle">${movie.title}</p>
+
+                        </div>
+
+                        <div class="smallListColumn">
+
+                            <p class="smallListDescription">${movie.description}</p>
+                    
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                        ${movie.genres.map( genre => `<span class="genre"> ${genre}</span>`).join('')}
+                </div>
+            </div>   
+        </div>
+            
+    `;
+}
+
+function createMovieListCard(movie) {
+
+    const poster = movie.poster || "../assets/posters/defaultList.svg";
+
+    return `
+        <div class="listCard" dataID="${movie.id}">
+
+            
+            
+            <img src="${poster}" alt="${movie.title}">
+
+            <div class="listCardInformation">
+                <p class="smallListTitle">${movie.title}</p>
+
+                <div class="listGenre">
+                        ${movie.genres.map( genre => `<span class="genre"> ${genre}</span>`).join('')}
+                </div>
+
+                <p class="listDescription">${movie.description}</p>
+            </div>
+        </div>
+    `;
+}

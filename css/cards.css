@@ -214,6 +214,188 @@
     margin-left: 0;
 }
 
+/*============================================
+                SMALL LIST CARDS LAYOUT
+  ============================================*/
+
+.smallListCard {
+    width: 100%; /* Fixed width to control the card size */
+    height: 80px;
+    display: flex; 
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.2s;
+    gap: 0px 20px;
+    /* background-color: #f9f9f9;  */
+
+}
+
+.smallListCard:hover {
+    opacity: 0.5; 
+    transform:translateY(-4px);
+}
+
+.smallListCard img{
+    width: 50px;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 12px;
+}
+
+.smallListContainer{
+    display: grid;
+    grid-template-columns: 350px 1fr; /* First column is fixed at 200px, second takes remaining space */
+    gap: 10px;
+    padding: 0px;
+
+    margin: 0; 
+}
+
+.smallListColumn{
+    flex: 1 1 45%; 
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+/*--------------Card Text Beside Small List Card---------------*/
+
+.smallListTitle {
+    margin: 0; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    text-align: left;
+}
+
+.smallListDescription{
+    margin: 0; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    text-align: left;
+    color: #b4b4b4;
+}
+
+.genre{
+    margin-right: 10px;
+    padding:2px 5px;
+    border-radius:3px;
+    color: #b4b4b4;
+    font-size:8px; 
+    border: 2px solid #b4b4b4;
+    font-size: 13px;
+}
+
+/*=======================================================
+                SMALL LIST ADD MEDIA CARDS LAYOUT
+=======================================================*/
+
+.addSmallListCard{
+    width: 50px;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(to right, #888888, #000000);
+    border-radius: 12px;
+}
+
+.addSmallListCard img{
+    width: 25px;
+    height: 25px;
+}
+
+/*--------------Add Card Text Under Small List Card---------------*/
+
+.smallListAddCardText {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.smallListAddCardText p{
+    font-size: 25px; /* Adjusted for readability */
+    margin-left: 0;
+}
+
+/*============================================
+                LIST CARDS LAYOUT
+  ============================================*/
+
+.listCard {
+    width: 100%; /* Fixed width to control the card size */
+    height: 200px;
+    display: flex; 
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.2s;
+    gap: 0px 20px;
+    /* background-color: #f9f9f9;   */
+}
+
+.listCard img{
+    width: 130px;
+    height: 200px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.listGenre{
+    transform: translateY(10px);
+}
+
+.listDescription{
+    margin: 0; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    text-align: left;
+    color: #b4b4b4;
+
+    width:95%;
+    transform: translateY(25px);
+}
+
+/*=======================================================
+                LIST ADD MEDIA CARDS LAYOUT
+=======================================================*/
+
+.addListCard{
+    width: 130px;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(to right, #888888, #000000);
+    border-radius: 20px;
+}
+
+.addListCard img{
+    width: 60px;
+    height: 60px;
+}
+
+.listAddCardText {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
 /*=======================================================
                     CARD ICONS
 =======================================================*/

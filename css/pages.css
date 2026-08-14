@@ -108,13 +108,23 @@ h2 {
 
 }
 
-#movie-container, #show-container, #game-container, #book-container, #song-container,
-#favorite-container { 
+.contentContainer{ 
   display:flex;
   flex-wrap: wrap;
   gap: var(--cardGap);
 
   align-content: flex-start;
+}
+
+.contentContainer.smallListView {
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+.contentContainer.listView {
+  display: grid;
+  grid-template-columns: 50% 1fr; 
 }
 
 .searchBar{

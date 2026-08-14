@@ -21,9 +21,13 @@ const movieState = {
 function renderMovies(){
 
     if (movieState.currentView === "grid") {
-        renderCollectionCards( movieState.displayedMovies, "movie-container", createMovieCard, "Add Movie", createAddCard);
+        renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieCard, "Add Movie", createAddCard);
+    } else if (movieState.currentView === "smallGrid") {
+        renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieSmallGridCard, "Add Movie", createAddSmallGridCard);
+    } else if (movieState.currentView === "smallList") {
+        renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieSmallListCard, "Add Movie", createAddSmallListCard);
     } else {
-        renderCollectionCards( movieState.displayedMovies, "movie-container", createMovieSmallGridCard, "Add Movie", createAddSmallGridCard);
+        renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieListCard, "Add Movie", createAddListCard);
     }
 
 }
@@ -97,7 +101,7 @@ function onViewChanged(view) {
 
 searchEntities( "movieSearch", onSearch );
 
-viewToggle( "viewToggle", onViewChanged );
+viewToggle( "viewToggle", onViewChanged, "viewStyle" );
 
 applyFilters();
 

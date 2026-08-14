@@ -69,3 +69,34 @@ function createAddSmallGridCard(text) {
     `;
 
 }
+
+
+function createAddSmallListCard(text) {
+
+    return `
+        <div class="smallListCard">
+            <div class="addSmallListCard">
+                <img src="../assets/icons/addentity.svg" alt="+">
+            </div>
+            <div>
+                <p class="smallListTitle">${text}</p>
+            </div>
+        </div>
+    `;
+
+}
+
+function createAddListCard(text) {
+
+    return `
+        <div class="listCard">
+            <div class="addListCard">
+                <img src="../assets/icons/addentity.svg" alt="+">
+            </div>
+            <div>
+                <p class="smallListTitle">${text}</p>
+            </div>
+        </div>
+    `;
+
+}
