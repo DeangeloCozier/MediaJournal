@@ -396,6 +396,31 @@
     text-align: left;
 }
 
+.listImage{
+    z-index: 1;
+}
+
+.leftIconList{
+    position:relative;
+    top:45px;
+    left:10px;
+    gap:4px;
+    z-index: 2;
+
+
+}
+
+.rightIconList{
+    position:relative;
+    top:32px;
+    left:45px;
+    gap:4px;
+    z-index: 2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 /*=======================================================
                     CARD ICONS
 =======================================================*/
