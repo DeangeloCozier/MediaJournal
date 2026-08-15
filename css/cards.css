@@ -391,18 +391,19 @@
 .listAddCardText {
     flex: 1; /* Takes up remaining space */
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: left;
 }
+
 
 .listImage{
     z-index: 1;
 }
 
 .leftIconList{
-    position:relative;
-    top:45px;
+    position:absolute;
+    top:15px;
     left:10px;
     gap:4px;
     z-index: 2;
@@ -411,9 +412,9 @@
 }
 
 .rightIconList{
-    position:relative;
-    top:32px;
-    left:45px;
+    position:absolute;
+    top:15px;
+    right:10px;
     gap:4px;
     z-index: 2;
 
