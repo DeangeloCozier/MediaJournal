@@ -70,7 +70,6 @@ function createAddSmallGridCard(text) {
 
 }
 
-
 function createAddSmallListCard(text) {
 
     return `
@@ -99,4 +98,15 @@ function createAddListCard(text) {
         </div>
     `;
 
+}
+
+function createAddCompactGridCard(text){
+    return `
+        <div class="card">
+            <div class="add-card">
+                <img src="../assets/icons/addentity.svg" alt="+">
+                <p class="addCompactGridCardText">${text}</p>
+            </div>
+        </div>
+    `;
 }

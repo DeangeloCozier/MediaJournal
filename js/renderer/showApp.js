@@ -20,9 +20,16 @@ const showState = {
 function renderShows(){
 
     if (showState.currentView === "grid") {
-        renderCollectionCards( showState.displayedShows, "show-container", createShowCard, "Add Show", createAddCard);
-    } else {
-        renderCollectionCards( showState.displayedShows, "show-container", createShowSmallGridCard, "Add Show", createAddSmallGridCard);
+        renderCollectionCards( showState.displayedShows, "viewStyle", createShowCard, "Add Show", createAddCard);
+    } else if (showState.currentView === "smallGrid") {
+        renderCollectionCards( showState.displayedShows, "viewStyle", createShowSmallGridCard, "Add Show", createAddSmallGridCard);
+    } else if (showState.currentView === "smallList") {
+        renderCollectionCards( showState.displayedShows, "viewStyle", createShowSmallListCard, "Add Show", createAddSmallListCard);
+    } else  if (showState.currentView === "list"){
+        renderCollectionCards( showState.displayedShows, "viewStyle", createShowListCard, "Add Show", createAddListCard);
+    }
+    else {
+        renderCollectionCards( showState.displayedShows, "viewStyle", createShowCompactGridCard, "Add Show", createAddCompactGridCard);
     }
 
 }

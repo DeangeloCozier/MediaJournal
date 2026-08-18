@@ -22,6 +22,8 @@ function viewToggle(buttonID, viewState, containerID){
         }
         else if (currentView === "smallList"){
             currentView = "list";
+        } else if (currentView === "list") {
+            currentView = "compactGrid";
         } else {
             currentView = 'grid';
         }
@@ -34,7 +36,6 @@ function viewToggle(buttonID, viewState, containerID){
         if(currentView === "grid"){
 
             button.innerHTML = gridIcon;
-            container.classList.remove('listView');
 
         } else if (currentView === "smallGrid"){
             button.innerHTML = smallGridIcon;
@@ -43,10 +44,13 @@ function viewToggle(buttonID, viewState, containerID){
             button.innerHTML = smallListIcon;
             container.classList.add('smallListView');
         
-        } else {
+        } else if (currentView === "list"){
             button.innerHTML = listIcon;
             container.classList.remove('smallListView');
             container.classList.add('listView');
+        } else {
+            button.innerHTML = compactGridIcon;
+            container.classList.remove('listView');
         }
     }
 }

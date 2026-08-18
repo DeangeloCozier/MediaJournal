@@ -26,8 +26,11 @@ function renderMovies(){
         renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieSmallGridCard, "Add Movie", createAddSmallGridCard);
     } else if (movieState.currentView === "smallList") {
         renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieSmallListCard, "Add Movie", createAddSmallListCard);
-    } else {
+    } else  if (movieState.currentView === "list"){
         renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieListCard, "Add Movie", createAddListCard);
+    }
+    else {
+        renderCollectionCards( movieState.displayedMovies, "viewStyle", createMovieCompactGridCard, "Add Movie", createAddCompactGridCard);
     }
 
 }
