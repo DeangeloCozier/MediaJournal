@@ -79,7 +79,7 @@ function onViewChanged(view) {
 
 searchEntities( "showSearch", onSearch );
 
-viewToggle( "viewToggle", onViewChanged );
+viewToggle( "viewToggle", onViewChanged,  "viewStyle" );
 
 applyFilters();
 

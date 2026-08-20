@@ -21,9 +21,16 @@ const musicState = {
 function renderMusic(){
 
     if (musicState.currentView === "grid") {
-        renderCollectionCards( musicState.displayedMusic, "song-container", createSongCard, "Add Music", createAddCard);
-    } else {
-        renderCollectionCards( musicState.displayedMusic, "song-container", createMusicSmallGridCard, "Add Music", createAddSmallGridCard);
+        renderCollectionCards( musicState.displayedMusic, "viewStyle", createSongCard, "Add Music", createAddCard);
+    } else if (musicState.currentView === "smallGrid") {
+        renderCollectionCards( musicState.displayedMusic, "viewStyle", createMusicSmallGridCard, "Add Music", createAddSmallGridCard);
+    } else if (musicState.currentView === "smallList") {
+        renderCollectionCards( musicState.displayedMusic, "viewStyle", createMusicSmallListCard, "Add Music", createAddSmallListCard);
+    } else  if (musicState.currentView === "list"){
+        renderCollectionCards( musicState.displayedMusic, "viewStyle", createMusicListCard, "Add Music", createAddListCard);
+    }
+    else {
+        renderCollectionCards( musicState.displayedMusic, "viewStyle", createMusicCompactGridCard, "Add Music", createAddCompactGridCard);
     }
 
 }
@@ -77,7 +84,7 @@ function onViewChanged(view) {
 
 searchEntities( "musicSearch", onSearch );
 
-viewToggle( "viewToggle", onViewChanged );
+viewToggle( "viewToggle", onViewChanged, "viewStyle" );
 
 applyFilters();
 

@@ -21,9 +21,16 @@ const gameState = {
 function renderGames(){
 
     if (gameState.currentView === "grid") {
-        renderCollectionCards( gameState.displayedMovies, "game-container", createGameCard, "Add Game", createAddCard);
-    } else {
-        renderCollectionCards( gameState.displayedMovies, "game-container", createGameSmallGridCard, "Add Game", createAddSmallGridCard);
+        renderCollectionCards( gameState.displayedGames, "viewStyle", createGameCard, "Add Game", createAddCard);
+    } else if (gameState.currentView === "smallGrid") {
+        renderCollectionCards( gameState.displayedGames, "viewStyle", createGameSmallGridCard, "Add Game", createAddSmallGridCard);
+    } else if (gameState.currentView === "smallList") {
+        renderCollectionCards( gameState.displayedGames, "viewStyle", createGameSmallListCard, "Add Game", createAddSmallListCard);
+    } else  if (gameState.currentView === "list"){
+        renderCollectionCards( gameState.displayedGames, "viewStyle", createGameListCard, "Add Game", createAddListCard);
+    }
+    else {
+        renderCollectionCards( gameState.displayedGames, "viewStyle", createGameCompactGridCard, "Add Game", createAddCompactGridCard);
     }
 
 }
@@ -48,7 +55,7 @@ function applyFilters() {
 
     }
 
-    gameState.displayedMovies = results;
+    gameState.displayedGames = results;
 
 }
 
@@ -77,7 +84,7 @@ function onViewChanged(view) {
 
 searchEntities( "gameSearch", onSearch );
 
-viewToggle( "viewToggle", onViewChanged );
+viewToggle( "viewToggle", onViewChanged, "viewStyle" );
 
 applyFilters();
 

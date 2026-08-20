@@ -20,10 +20,17 @@ const bookState = {
 
 function renderBooks(){
 
-    if (bookState.currentView === "grid") {
-        renderCollectionCards( bookState.displayedBooks, "book-container", createBookCard, "Add book", createAddCard);
-    } else {
-        renderCollectionCards( bookState.displayedBooks, "book-container", createBookSmallGridCard, "Add book", createAddSmallGridCard);
+   if (bookState.currentView === "grid") {
+        renderCollectionCards( bookState.displayedBooks, "viewStyle", createBookCard, "Add Book", createAddCard);
+    } else if (bookState.currentView === "smallGrid") {
+        renderCollectionCards( bookState.displayedBooks, "viewStyle", createBookSmallGridCard, "Add Book", createAddSmallGridCard);
+    } else if (bookState.currentView === "smallList") {
+        renderCollectionCards( bookState.displayedBooks, "viewStyle", createBookSmallListCard, "Add Book", createAddSmallListCard);
+    } else  if (bookState.currentView === "list"){
+        renderCollectionCards( bookState.displayedBooks, "viewStyle", createBookListCard, "Add Book", createAddListCard);
+    }
+    else {
+        renderCollectionCards( bookState.displayedBooks, "viewStyle", createBookCompactGridCard, "Add Book", createAddCompactGridCard);
     }
 
 }
@@ -77,7 +84,7 @@ function onViewChanged(view) {
 
 searchEntities( "bookSearch", onSearch );
 
-viewToggle( "viewToggle", onViewChanged );
+viewToggle( "viewToggle", onViewChanged, "viewStyle" );
 
 applyFilters();
 

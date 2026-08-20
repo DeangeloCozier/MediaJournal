@@ -9,7 +9,10 @@ const songs = [
 
         progress: 100,          // 0-100
         favorite: true,
-        rating: 9.8
+        rating: 9.8,
+
+        genres: ["Emo Rap", "Hip-Hop", "Alternative", "R&B"],
+        description: ""
     },
 
     {
@@ -22,7 +25,10 @@ const songs = [
 
         progress: 100,          // 0-100
         favorite: true,
-        rating: 9.8
+        rating: 9.8,
+
+        genres: ["Hip-Hop", "Rap", "Trap"],
+        description: ""
     },
 
     {
@@ -35,7 +41,10 @@ const songs = [
 
         progress: 100,          // 0-100
         favorite: true,
-        rating: 9.6
+        rating: 9.6,
+
+        genres: ["Hip-Hop", "Rap", "Trap", "Drill"],
+        description: ""
     },
 
     {
@@ -48,7 +57,10 @@ const songs = [
 
         progress: 75,          // 0-100
         favorite: true,
-        rating: 9.5
+        rating: 9.5,
+
+        genres: ["Hip-Hop", "Conscious Rap", "Rap" ],
+        description: ""
     },
 
     {
@@ -61,7 +73,10 @@ const songs = [
 
         progress: 100,          // 0-100
         favorite: true,
-        rating: 9.7
+        rating: 9.7,
+
+        genres: ["Hip-Hop", "Rap", "Trap", "Funk", "Soul", "R&B"],
+        description: ""
     },
 
     {
@@ -74,6 +89,9 @@ const songs = [
 
         progress: 100,          // 0-100
         favorite: false,
-        rating: 9.4
+        rating: 9.4,
+
+        genres: ["Trap", "Rap", "Hip-Hop", "Metal"],
+        description: ""
     }
 ]
