@@ -4,7 +4,7 @@ function createMovieCard(movie) {
 
     return `
 
-        <div class="card" data-id="${movie.id}">
+        <div class="card" data-id="${movie.id}" onclick="cardClick()">
 
             <div class="cardOverlay">
                 <div class="leftIcons">

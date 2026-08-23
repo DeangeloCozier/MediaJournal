@@ -46,7 +46,7 @@ function createAddCard(text) {
 
     return `
         <div class="card">
-            <div class="add-card">
+            <div class="add-card" onclick="addCardClick()">
                 <img src="../assets/icons/addentity.svg" alt="+">
             </div>
             <p>${text}</p>

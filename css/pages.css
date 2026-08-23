@@ -108,7 +108,7 @@ h2 {
 
 }
 
-.contentContainer{ 
+.contentContainer, #movie-container, #show-container, #game-container, #book-container, #song-container, #favorite-container{ 
   display:flex;
   flex-wrap: wrap;
   gap: var(--cardGap);
