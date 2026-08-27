@@ -1,9 +1,9 @@
 const favoriteMedia = [
-    ...movies.map(item => ({ ...item, mediaType: "movie" })),
-    ...shows.map(item => ({ ...item, mediaType: "show" })),
-    ...games.map(item => ({ ...item, mediaType: "game" })),
-    ...books.map(item => ({ ...item, mediaType: "book" })),
-    ...songs.map(item => ({ ...item, mediaType: "song" }))
+    ...movies.map(item => ({ ...item, type: "movies" })),
+    ...shows.map(item => ({ ...item, type: "shows" })),
+    ...games.map(item => ({ ...item, type: "games" })),
+    ...books.map(item => ({ ...item, type: "books" })),
+    ...songs.map(item => ({ ...item, type: "songs" }))
 ];
 
 renderHomeCards(

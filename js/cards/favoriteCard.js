@@ -4,7 +4,7 @@ function createFavoriteCard(media){
 
     return `
 
-        <div class="card" data-id="${media.id}">
+        <div class="card" data-id="${media.id}" data-type="${media.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">

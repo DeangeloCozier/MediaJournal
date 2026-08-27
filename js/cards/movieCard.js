@@ -4,7 +4,7 @@ function createMovieCard(movie) {
 
     return `
 
-        <div class="card" data-id="${movie.id}" onclick="cardClick()">
+        <div class="card" data-id="${movie.id}" data-type="${movie.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">
@@ -62,7 +62,7 @@ function createMovieSmallGridCard(movie){
 
     return `
 
-        <div class="smallGridCard" dataID="${movie.id}">
+        <div class="smallGridCard" data-id="${movie.id}" data-type="${movie.mediaType}">
             
             <img src="${poster}" alt="${movie.title}">
 
@@ -121,7 +121,7 @@ function createMovieSmallListCard(movie){
 
     return `
 
-        <div class="smallListCard" dataID="${movie.id}">
+        <div class="smallListCard" data-id="${movie.id}" data-type="${movie.mediaType}">
             
             <img src="${poster}" alt="${movie.title}">
 
@@ -156,7 +156,7 @@ function createMovieListCard(movie) {
     const poster = movie.poster || "../assets/posters/defaultList.svg";
 
     return `
-        <div class="listCard" dataID="${movie.id}">
+        <div class="listCard" dataID="${movie.id}" data-type="${movie.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIconList">
@@ -217,7 +217,7 @@ function createMovieCompactGridCard(movie){
     const poster = movie.poster || "../assets/posters/default.svg";
 
     return `
-        <div class="card" data-id="${movie.id}">
+        <div class="card" data-id="${movie.id}" data-type="${movie.mediaType}">
             <div class="compactGridCardOverlay">
 
                 <div class="leftIcons">

@@ -1,3 +1,5 @@
+const list = [...movies, ...shows, ...games, ...books, ...songs];
+
 document.addEventListener("click", function(event) {
 
     const card = event.target.closest(".card");
@@ -6,7 +8,12 @@ document.addEventListener("click", function(event) {
 
     const id = Number(card.dataset.id);
 
-    const movie = movies.find(movie => movie.id == id);
+    const type = card.dataset.type;
 
-    console.log(movie);
+    const container = card.closest('#movie-container, #show-container, #game-container, #song-container, #book-container, #favorite-container');
+
+    const cardInfo = list.find(entry => entry.mediaType === type && entry.id === id);
+
+    console.log(cardInfo);
+    console.log(container);
 });

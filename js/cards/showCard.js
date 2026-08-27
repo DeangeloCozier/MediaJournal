@@ -4,7 +4,7 @@ function createShowCard(show) {
 
     return `
 
-        <div class="card" data-id="${show.id}">
+        <div class="card" data-id="${show.id}" data-type="${show.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">
