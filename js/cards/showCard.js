@@ -62,7 +62,7 @@ function createShowSmallGridCard(show){
 
     return `
 
-        <div class="smallGridCard" dataID="${show.id}">
+        <div class="smallGridCard" dataID="${show.id}" data-type="${show.mediaType}">
             
             <img src="${poster}" alt="${show.title}">
 
@@ -121,7 +121,7 @@ function createShowSmallListCard(show){
 
     return `
 
-        <div class="smallListCard" dataID="${show.id}">
+        <div class="smallListCard" dataID="${show.id}" data-type="${show.mediaType}">
             
             <img src="${poster}" alt="${show.title}">
 
@@ -156,7 +156,7 @@ function createShowListCard(show) {
     const poster = show.poster || "../assets/posters/defaultList.svg";
 
     return `
-        <div class="listCard" dataID="${show.id}">
+        <div class="listCard" dataID="${show.id}" data-type="${show.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIconList">
@@ -217,7 +217,7 @@ function createShowCompactGridCard(show){
     const poster = show.poster || "../assets/posters/default.svg";
 
     return `
-        <div class="card" data-id="${show.id}">
+        <div class="card" data-id="${show.id}" data-type="${show.mediaType}">
             <div class="compactGridCardOverlay">
 
                 <div class="leftIcons">

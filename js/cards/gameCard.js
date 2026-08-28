@@ -4,7 +4,7 @@ function createGameCard(game) {
 
     return `
 
-        <div class="card" data-id="${game.id}">
+        <div class="card" data-id="${game.id}" data-type="${game.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">
@@ -62,7 +62,7 @@ function createGameSmallGridCard(game){
 
     return `
 
-        <div class="smallGridCard" dataID="${game.id}">
+        <div class="smallGridCard" dataID="${game.id}" data-type="${game.mediaType}">
             
             <img src="${poster}" alt="${game.title}">
 
@@ -121,7 +121,7 @@ function createGameSmallListCard(game){
 
     return `
 
-        <div class="smallListCard" dataID="${game.id}">
+        <div class="smallListCard" dataID="${game.id}" data-type="${game.mediaType}">
             
             <img src="${poster}" alt="${game.title}">
 
@@ -156,7 +156,7 @@ function createGameListCard(game) {
     const poster = game.poster || "../assets/posters/defaultList.svg";
 
     return `
-        <div class="listCard" dataID="${game.id}">
+        <div class="listCard" dataID="${game.id}" data-type="${game.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIconList">
@@ -217,7 +217,7 @@ function createGameCompactGridCard(game){
     const poster = game.poster || "../assets/posters/default.svg";
 
     return `
-        <div class="card" data-id="${game.id}">
+        <div class="card" data-id="${game.id}" data-type="${game.mediaType}">
             <div class="compactGridCardOverlay">
 
                 <div class="leftIcons">

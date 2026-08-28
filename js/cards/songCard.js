@@ -4,7 +4,7 @@ function createSongCard(song){
 
     return `
 
-        <div class="card" data-id="${song.id}">
+        <div class="card" data-id="${song.id}" data-type="${song.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">
@@ -62,7 +62,7 @@ function createMusicSmallGridCard(music){
 
     return `
 
-        <div class="smallGridCard" dataID="${music.id}">
+        <div class="smallGridCard" dataID="${music.id}" data-type="${music.mediaType}">
             
             <img src="${poster}" alt="${music.title}">
 
@@ -121,7 +121,7 @@ function createMusicSmallListCard(music){
 
     return `
 
-        <div class="smallListCard" dataID="${music.id}">
+        <div class="smallListCard" dataID="${music.id}" data-type="${music.mediaType}">
             
             <img src="${poster}" alt="${music.title}">
 
@@ -156,7 +156,7 @@ function createMusicListCard(music) {
     const poster = music.poster || "../assets/posters/defaultList.svg";
 
     return `
-        <div class="listCard" dataID="${music.id}">
+        <div class="listCard" dataID="${music.id}" data-type="${music.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIconList">
@@ -217,7 +217,7 @@ function createMusicCompactGridCard(music){
     const poster = music.poster || "../assets/posters/default.svg";
 
     return `
-        <div class="card" data-id="${music.id}">
+        <div class="card" data-id="${music.id}" data-type="${music.mediaType}">
             <div class="compactGridCardOverlay">
 
                 <div class="leftIcons">

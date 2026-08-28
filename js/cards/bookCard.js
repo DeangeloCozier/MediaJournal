@@ -4,7 +4,7 @@ function createBookCard(book){
 
     return `
 
-        <div class="card" data-id="${book.id}">
+        <div class="card" data-id="${book.id}" data-type="${book.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIcons">
@@ -60,7 +60,7 @@ function createBookSmallGridCard(book){
 
     return `
 
-        <div class="smallGridCard" dataID="${book.id}">
+        <div class="smallGridCard" dataID="${book.id}" data-type="${book.mediaType}">
             
             <img src="${poster}" alt="${book.title}">
 
@@ -119,7 +119,7 @@ function createBookSmallListCard(book){
 
     return `
 
-        <div class="smallListCard" dataID="${book.id}">
+        <div class="smallListCard" dataID="${book.id}" data-type="${book.mediaType}">
             
             <img src="${poster}" alt="${book.title}">
 
@@ -154,7 +154,7 @@ function createBookListCard(book) {
     const poster = book.poster || "../assets/posters/defaultList.svg";
 
     return `
-        <div class="listCard" dataID="${book.id}">
+        <div class="listCard" dataID="${book.id}" data-type="${book.mediaType}">
 
             <div class="cardOverlay">
                 <div class="leftIconList">
@@ -215,7 +215,7 @@ function createBookCompactGridCard(book){
     const poster = book.poster || "../assets/posters/default.svg";
 
     return `
-        <div class="card" data-id="${book.id}">
+        <div class="card" data-id="${book.id}" data-type="${book.mediaType}">
             <div class="compactGridCardOverlay">
 
                 <div class="leftIcons">
