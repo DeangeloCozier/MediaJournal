@@ -11,8 +11,14 @@ const songs = [
         favorite: true,
         rating: 9.8,
 
+        releaseDate: "2017-08-25",
+
         genres: ["Emo Rap", "Hip-Hop", "Alternative", "R&B"],
-        description: ""
+        description: "",
+
+        creator: ["XXXTentacion"],
+        studio: ["Bad Vibes Forever"],
+        distributionStudio: ["EMPIRE Distribution"]
     },
 
     {
@@ -27,8 +33,14 @@ const songs = [
         favorite: true,
         rating: 9.8,
 
+        releaseDate: "2019-06-07",
+
         genres: ["Hip-Hop", "Rap", "Trap"],
-        description: ""
+        description: "",
+
+        creator: ["Polo G"],
+        studio: ["Columbia Records"],
+        distributionStudio: ["Sony Music Entertainment"]
     },
 
     {
@@ -43,8 +55,14 @@ const songs = [
         favorite: true,
         rating: 9.6,
 
+        releaseDate: "2020-10-30",
+
         genres: ["Hip-Hop", "Rap", "Trap", "Drill"],
-        description: ""
+        description: "",
+
+        creator: ["King Von"],
+        studio: ["Only the Family"],
+        distributionStudio: ["EMPIRE Distribution"]
     },
 
     {
@@ -59,8 +77,14 @@ const songs = [
         favorite: true,
         rating: 9.5,
 
+        releaseDate: "2014-12-09",
+
         genres: ["Hip-Hop", "Conscious Rap", "Rap" ],
-        description: ""
+        description: "",
+
+        creator: ["J. Cole"],
+        studio: ["Dreamville Records", "Roc Nation", "ByStorm Entertainment"],
+        distributionStudio: ["Columbia Records"]
     },
 
     {
@@ -75,8 +99,14 @@ const songs = [
         favorite: true,
         rating: 9.7,
 
+        releaseDate: "2024-11-22",
+
         genres: ["Hip-Hop", "Rap", "Trap", "Funk", "Soul", "R&B"],
-        description: ""
+        description: "",
+
+        creator: ["Kendrick Lamar"],
+        studio: ["pgLang"],
+        distributionStudio: ["Interscope Records"]
     },
 
     {
@@ -91,7 +121,13 @@ const songs = [
         favorite: false,
         rating: 9.4,
 
+        releaseDate: "2018-07-27",
+
         genres: ["Trap", "Rap", "Hip-Hop", "Metal"],
-        description: ""
+        description: "", 
+
+        creator: ["Denzel Curry"],
+        studio: ["PH Recordings"],
+        distributionStudio: ["Loma Vista Recordings"]
     }
 ]

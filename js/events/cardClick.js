@@ -11,6 +11,7 @@ document.addEventListener("click", function(event) {
         const type = card.dataset.type;
         const cardInfo = list.find(entry => entry.mediaType === type && entry.id === id);
         
+        
         console.log(cardInfo);
     }
 });
