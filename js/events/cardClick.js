@@ -1,7 +1,9 @@
 document.addEventListener("click", function(event) {
     const addCard = event.target.closest('.add-card');
+    const container = event.target.closest('#movie-container, #show-container, #game-container, #book-container, #song-container, #favorite-container');
+    const mainContainer = event.target.closest('.mainHomeContent');
+
     if (addCard) {
-        const container = event.target.closest('#movie-container, #show-container, #game-container, #book-container, #song-container, #favorite-container');
         let message = '';
 
         switch(container.id){
@@ -40,7 +42,7 @@ document.addEventListener("click", function(event) {
         const type = card.dataset.type;
         const cardInfo = list.find(entry => entry.mediaType === type && entry.id === id);
         
-        
+        mainContainer.classList.add("is-blurry");
         console.log(cardInfo);
     }
 });
