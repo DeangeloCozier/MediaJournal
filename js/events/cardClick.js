@@ -1,12 +1,33 @@
 document.addEventListener("click", function(event) {
     const addCard = event.target.closest('.add-card');
     const container = event.target.closest('#movie-container, #show-container, #game-container, #book-container, #song-container, #favorite-container');
-    const mainContainer = event.target.closest('.mainHomeContent');
+    
+    const mainContainer = document.querySelector('.mainHomeContent');
+    const popup = document.querySelector('#cardPopupOverlay');
+
+    const popupCard = event.target.closest(".popupCard");
+
+    // If popup is open
+    if (!popup.classList.contains("hidden")) {
+
+        // Click was outside popupCard
+        if (!popupCard) {
+            popup.classList.add("hidden");
+
+            const mainContainer = document.querySelector(".mainHomeContent");
+            mainContainer.classList.remove("is-blurry");
+
+            return;
+        }
+
+        // Click was inside popupCard
+        return;
+    }
 
     if (addCard) {
         let message = '';
 
-        switch(container.id){
+        switch(container?.id){
             case "movie-container":
                     message = 'Movie Container';
                 break;
@@ -43,6 +64,9 @@ document.addEventListener("click", function(event) {
         const cardInfo = list.find(entry => entry.mediaType === type && entry.id === id);
         
         mainContainer.classList.add("is-blurry");
+        popup.classList.toggle("hidden");
+
         console.log(cardInfo);
     }
+
 });
