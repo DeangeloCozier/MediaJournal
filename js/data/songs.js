@@ -11,6 +11,9 @@ const songs = [
         favorite: true,
         rating: 9.8,
 
+        averageTime: "2m",
+        runtime: "22m",
+
         releaseDate: "2017-08-25",
 
         genres: ["Emo Rap", "Hip-Hop", "Alternative", "R&B"],
@@ -18,7 +21,9 @@ const songs = [
 
         creator: ["XXXTentacion"],
         studio: ["Bad Vibes Forever"],
-        distributionStudio: ["EMPIRE Distribution"]
+        distributionStudio: ["EMPIRE Distribution"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -33,6 +38,9 @@ const songs = [
         favorite: true,
         rating: 9.8,
 
+        averageTime: "3m",
+        runtime: "41m",
+
         releaseDate: "2019-06-07",
 
         genres: ["Hip-Hop", "Rap", "Trap"],
@@ -40,7 +48,9 @@ const songs = [
 
         creator: ["Polo G"],
         studio: ["Columbia Records"],
-        distributionStudio: ["Sony Music Entertainment"]
+        distributionStudio: ["Sony Music Entertainment"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -55,6 +65,9 @@ const songs = [
         favorite: true,
         rating: 9.6,
 
+        averageTime: "3m",
+        runtime: "43m",
+
         releaseDate: "2020-10-30",
 
         genres: ["Hip-Hop", "Rap", "Trap", "Drill"],
@@ -62,7 +75,9 @@ const songs = [
 
         creator: ["King Von"],
         studio: ["Only the Family"],
-        distributionStudio: ["EMPIRE Distribution"]
+        distributionStudio: ["EMPIRE Distribution"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -77,6 +92,9 @@ const songs = [
         favorite: true,
         rating: 9.5,
 
+        averageTime: "5m",
+        runtime: "65m",
+
         releaseDate: "2014-12-09",
 
         genres: ["Hip-Hop", "Conscious Rap", "Rap" ],
@@ -84,7 +102,9 @@ const songs = [
 
         creator: ["J. Cole"],
         studio: ["Dreamville Records", "Roc Nation", "ByStorm Entertainment"],
-        distributionStudio: ["Columbia Records"]
+        distributionStudio: ["Columbia Records"],
+
+        watchingStatus: "Listening"
     },
 
     {
@@ -99,6 +119,9 @@ const songs = [
         favorite: true,
         rating: 9.7,
 
+        averageTime: "4m",
+        runtime: "44m",
+
         releaseDate: "2024-11-22",
 
         genres: ["Hip-Hop", "Rap", "Trap", "Funk", "Soul", "R&B"],
@@ -106,7 +129,9 @@ const songs = [
 
         creator: ["Kendrick Lamar"],
         studio: ["pgLang"],
-        distributionStudio: ["Interscope Records"]
+        distributionStudio: ["Interscope Records"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -121,6 +146,9 @@ const songs = [
         favorite: false,
         rating: 9.4,
 
+        averageTime: "3m",
+        runtime: "43m",
+
         releaseDate: "2018-07-27",
 
         genres: ["Trap", "Rap", "Hip-Hop", "Metal"],
@@ -128,6 +156,8 @@ const songs = [
 
         creator: ["Denzel Curry"],
         studio: ["PH Recordings"],
-        distributionStudio: ["Loma Vista Recordings"]
+        distributionStudio: ["Loma Vista Recordings"],
+
+        watchingStatus: "Finished"
     }
 ]

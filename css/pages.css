@@ -140,8 +140,8 @@ h2 {
 
 .popupCard{
   transform: translate(0px, -100px);
-  width: 750px;
-  height: 400px;
+  width: 800px;
+  height: 330px;
   background: #262626;
   border-radius:20px;
 
@@ -217,4 +217,9 @@ h2 {
     justify-content: center;
     align-items: center;
 
+}
+
+.dot{
+  color: #b4b4b4;
+  transform: translate(0px, 2px); 
 }

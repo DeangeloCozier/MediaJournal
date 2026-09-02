@@ -12,6 +12,8 @@ const movies = [
         favorite: false,
         rating: 6.7,
 
+        runtime: "1h 32m",
+
         releaseDate: "2008-06-06",
 
         genres: ["Family","Kids", "Comedy", "Adventure"],
@@ -20,7 +22,9 @@ const movies = [
         screenwriter: ["Johnathan Aibel", "Glen Berger"],
         originalConceptCreator: ["Ethan Reiff", "Cyrus Voris"],
         studio: ["DreamWorks Animation"],
-        distributionStudio: ["Paramount Pictures"]
+        distributionStudio: ["Paramount Pictures"],
+
+        watchingStatus: "Dropped"
     },
 
     {
@@ -35,16 +39,20 @@ const movies = [
         favorite: false,
         rating: 8.2,
 
+        runtime: "1h 56m",
+
         releaseDate: "2006-06-09",
 
         genres: ["Family","Kids", "Comedy", "Adventure"],
 
         description: "While traveling to California to race The King and Chick Hicks in the Piston Cup Championship, Lightning McQueen falls out of his trailer and winds up in a run-down town called Radiator Springs. He slowly befriends the town's odd residents, including Sally, Doc Hudson and Mater. When it comes time for him to leave, the championship is no longer his top priority.",
-        creator: ["Jørgen Klubien", "John Lasseter", "Joe Ranft"],
+        creator: ["J\u00F8rgen Klubien", "John Lasseter", "Joe Ranft"],
         director: ["John Lasseter", "Joe Ranft"],
         screenwriter: ["John Lasseter, Joe Ranft", "Jørgen Klubien", "Dan Fogelman", "Kiel Murray", "Phil Lorin"],
         studio: ["Pixel Animation Studios"],
-        distributionStudio: ["Walt Disney Pictures"]
+        distributionStudio: ["Walt Disney Pictures"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -59,6 +67,8 @@ const movies = [
         favorite: true,
         rating: 9.0,
 
+        runtime: "1h 48m",
+
         releaseDate: "2016-02-12",
 
         genres: ["Action","Adventure", "Comedy",],
@@ -68,7 +78,9 @@ const movies = [
         director: ["Tim Miller"],
         screenwriter: ["Rhett Reese", "Paul Wernick"],
         studio:["20th Century Fox", "Marvel Entertainment", "Maximum Effort"],
-        distributionStudio: ["20th Century Fox"]
+        distributionStudio: ["20th Century Fox"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -83,6 +95,8 @@ const movies = [
         favorite: false,
         rating: null,
 
+        runtime: "1h 43m",
+
         releaseDate: "2010-06-18",
 
         genres: ["Family","Kids", "Comedy", "Adventure", "Fantasy"],
@@ -92,7 +106,9 @@ const movies = [
         director: ["Lee Unkrich"],
         screenwriter: ["Michael Arndt"],
         studio:["Pixar Studios"],
-        distributionStudio: ["Walt Disney Pictures"]
+        distributionStudio: ["Walt Disney Pictures"],
+
+        watchingStatus: "Plan To Watch"
     },
 
     {
@@ -107,6 +123,8 @@ const movies = [
         favorite: false,
         rating: 8.5,
 
+        runtime: "1h 41m",
+
         releaseDate: "2009-08-14",
 
         genres: ["Adventure","Fantasy"],
@@ -114,7 +132,9 @@ const movies = [
         description: "During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, spills a collection of magical elixirs that endanger Sosuke's village.",
         creator: ["Hayao Miyazaki"],
         studio: ["Studio Ghibli"],
-        distributionStudio: ["Toho", "Walt Disney Studios"]
+        distributionStudio: ["Toho", "Walt Disney Studios"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -129,6 +149,8 @@ const movies = [
         favorite: false,
         rating: null,
 
+        runtime: "2h 2m",
+
         releaseDate: "2019-10-04",
 
         genres: ["Crime","Drama"],
@@ -138,7 +160,9 @@ const movies = [
         director: ["Todd Phillips"],
         screenwriter: ["Todd Phillips", "Scott Silver"],
         studio: ["Warner Bros. Pictures", "DC Films", "Village Roadshow Pictures", "BRON Creative"],
-        distributionStudio: ["Warner Bros. Pictures"]
+        distributionStudio: ["Warner Bros. Pictures"],
+
+        watchingStatus: "Watching"
 
     },
 
@@ -154,6 +178,8 @@ const movies = [
         favorite: false, 
         rating: null,
 
+        runtime: "2h 35m",
+
         releaseDate: "2012-12-25",
 
         genres: ["Western","Drama", "Action"],
@@ -161,7 +187,9 @@ const movies = [
         description: "Two years before the Civil War, Django, a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie, where Django's long-lost wife is still a slave.",
         creator: ["Quentin Tarantino"],
         studio: ["The Weinstein Company", "SonSy Pictures Releasing", "A Band Apart"],
-        distributionStudio: ["The Weinstein Company", "Sony Pictures Releasing"]
+        distributionStudio: ["The Weinstein Company", "Sony Pictures Releasing"],
+
+        watchingStatus: "Plan To Watch"
     },
 
     {
@@ -176,6 +204,8 @@ const movies = [
         favorite: false,
         rating: null,
 
+        runtime: "1h 44m",
+
         releaseDate: "2017-02-24",
 
         genres: ["Horror","Mystery", "Thiller", "Comedy"],
@@ -183,7 +213,9 @@ const movies = [
         description: "Now that Chris and his girlfriend, Rose, have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway with Missy and Dean. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries leads him to a truth that he never could have imagined",
         creator: ["Jordan Peele"],
         studio: ["Blumhouse Production", "Monkeypaw Productions", "QC Entertainment"],
-        distributionStudio: ["Universal Pictures"]
+        distributionStudio: ["Universal Pictures"],
+
+        watchingStatus: "Plan To Watch"
 
     },
 
@@ -199,7 +231,9 @@ const movies = [
         favorite: false,
         rating: null,
 
-        releaseDate: "2015--05-15",
+        runtime: "2h 1m",
+
+        releaseDate: "2015-05-15",
 
         genres: ["Action","Sci-Fi", "Adventure"],
 
@@ -207,7 +241,9 @@ const movies = [
         creator:["George Miller"],
         screenwriter:["George Miller", "Brendan McCarthy", "Nico Lathouris"],
         studio: ["Kennedy Miller Mitchell", "Village Roadshow Pictures"],
-        distributionStudio: ["Warner Bros. Pictures"]
+        distributionStudio: ["Warner Bros. Pictures"],
+
+        watchingStatus: "No Plan To Watch"
     },
 
     {
@@ -222,6 +258,8 @@ const movies = [
         favorite: false,
         rating: null,
 
+        runtime: "2h 17m",
+
         releaseDate: "2017-03-03",
 
         genres: ["Action", "Adventure", "Fantasy"],
@@ -230,7 +268,9 @@ const movies = [
         creator: ["James Mangold", "Hugh Jackman"],
         screenwriter: ["James mangold", "Scott Frank", "Michael Green"],
         studio: ["20th Century Fox", "Marvel Entertainment", "Kinberg Genre", "Hutch Parker Entertainment", "The Donners' Company"],
-        distributor:["20th Century Fox"]
+        distributor:["20th Century Fox"],
+
+        watchingStatus: "Plan To Watch"
     },
 
     {
@@ -245,6 +285,8 @@ const movies = [
         favorite: true,
         rating: 9.4,
 
+        runtime: "2h 57m",
+
         releaseDate: "2013-12-25",
 
         genres: ["Comedy", "Drama", "Biography"],
@@ -254,7 +296,9 @@ const movies = [
         director: ["Martin Scorsese"],
         screenwriter: ["Terence Winter"],
         studio: ["Red Granite Pictures", "Appian Way Productions", "Sikelia Productions"],
-        distributionStudio: ["Paramount Pictures", "Universal Pictures"]
+        distributionStudio: ["Paramount Pictures", "Universal Pictures"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -269,6 +313,8 @@ const movies = [
         favorites: false,
         rating: null, 
 
+        runtime: "2h 23m",
+
         releaseDate: "2021-11-09",
 
         genres: ["Action", "Adventure", "Mystery", "Thriller"],
@@ -277,7 +323,9 @@ const movies = [
         director: ["Sam Mendes"],
         screenwriter: ["Neal Purvis", "Robert Wade", "John Logan"],
         studio: ["Eon Production", "Metro-Goldwyn-Mayer Pictures", "Columbia Pictures"],
-        distributionStudio:["Soney Pictures Releasing"]
+        distributionStudio:["Soney Pictures Releasing"],
+
+        watchingStatus: "Plan To Watch"
     },
 
     {
@@ -292,6 +340,8 @@ const movies = [
         favorite: false,
         rating: 6.5,
 
+        runtime: "2h 45m",
+
         releaseDate: "2021-07-20",
 
         genres: ["Action", "Adventure", "Fantasy", "Thriller", "Mystery"],
@@ -300,12 +350,14 @@ const movies = [
         creator: ["Christopher Nolan"],
         screenwriter: ["Johnathan Nolan", "Christopher Nolan"],
         studio: ["Legendary Pictures", "DC Entertainment", "Syncopy Inc."],
-        distributionStudio: ["Warner Bros. Pictures"]
+        distributionStudio: ["Warner Bros. Pictures"],
+
+        watchingStatus: "Finished"
     },
 
     {
         id: 14,
-        title: "Dawn of the Planet of Apes",
+        title: "Dawn of the Planet of the Apes",
         poster: "",
         createdAt: "2026-04-08",
         mediaType: "Movie",
@@ -315,13 +367,17 @@ const movies = [
         favorites: false, 
         rating: null,
 
+        runtime: "2h 11m",
+
         releaseDate: "2014-07-11",
         
         genres: ["Action", "Adventure", "Sci-Fi"],
 
         description: "Ten years after simian flu wiped out much of the world's Homo sapiens, genetically enhanced chimpanzee Caesar and his ever-growing band of followers has established a thriving colony just outside San Francisco in Muir Woods. Meanwhile, a small band of human survivors emerges, which forces Caesar -- as leader -- to grapple with the dual challenge of protecting his people and re-establishing a relationship with the remaining human population -- the latter being Caesar's secret wish.",
         director: ["Matt Reeves"],
-        screenwriter: ["Mark Bomback", "Rick Jaffa", "Amanda Silver"]
+        screenwriter: ["Mark Bomback", "Rick Jaffa", "Amanda Silver"],
+
+        watchingStatus: "Plan To Watch"
     }
 
 ];

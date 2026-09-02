@@ -11,6 +11,9 @@ const shows = [
         favorite: false,
         rating: 8.0,
 
+        averageTime: "47m",
+        runtime: "62h",
+
         releaseDate: "2008-01-20",
         endDate: "2013-09-29",
 
@@ -21,7 +24,9 @@ const shows = [
         director: ["Vince Gilligan", "Michelle MacLaren", "Bryan Cranston"],
         screenwriter: ["Peter Gould", "Thomas Schnauz", "Moira Walley-Beckett", "Gennifer Hutchison", "George Mastras"],
         studio: ["Sony Pictures Television"],
-        distributionStudio: ["AMC", "Netflix"]
+        distributionStudio: ["AMC", "Netflix"], 
+
+        watchingStatus: "Paused"
 
     },
 
@@ -37,6 +42,9 @@ const shows = [
         favorite: false,
         rating: 5.5,
 
+        averageTime: "42m",
+        runtime: "64h",
+
         releaseDate: "2013-10-03",
         endDate: "2018-08-01",
 
@@ -47,7 +55,9 @@ const shows = [
         director: ["Joseph Morgan", "Daniel Gillies", "Charles Michael Davis"],
         screenwriter: ["Michael Narducci", "Julie Plec"],
         studio: ["Warner Bros. Television", "CBS Television Studios", "Alloy Entertainment", "Bonanza Productions", "My So-Called Company"],
-        distributionStudio: ["CW Network", "Warner Bros. Television Distribution"]
+        distributionStudio: ["CW Network", "Warner Bros. Television Distribution"],
+
+        watchingStatus: "Dropped"
     },
 
     {
@@ -62,6 +72,9 @@ const shows = [
         favorite: true,
         rating: 9.4,
 
+        averageTime: "23m",
+        runtime: "9h 12m",
+
         releaseDate: "2014-10-09",
         endDate: "2015-03-26",
 
@@ -73,7 +86,9 @@ const shows = [
         director: ["Kenichi Shimizu"],
         screenwriter: ["Shōji Yonemura"],
         studio: ["Nipon Television", "VAP", "Forecast Communications", "Madhouse"],
-        distributionStudio: ["Sentai Filmworks", "Crunchyroll"]
+        distributionStudio: ["Sentai Filmworks", "Crunchyroll"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -88,6 +103,9 @@ const shows = [
         favorite: false,
         rating: 9.0,
 
+        averageTime: "23m",
+        runtime: "23h 23m",
+
         releaseDate: "2005-02-21",
         endDate: "2008-07-19",
 
@@ -97,7 +115,9 @@ const shows = [
         screenwriter: ["Aaron Ehasz"],
         director: ["Dave Filoni", "Giancarlo Volpe"],
         studio: ["Nickelodeon Animation Studio"],
-        distributionStudio: ["Paramount Global", "Netflix", "Amazon Prime Video"]
+        distributionStudio: ["Paramount Global", "Netflix", "Amazon Prime Video"],
+
+        watchingStatus: "Paused"
     },
 
     {
@@ -115,13 +135,18 @@ const shows = [
         releaseDate: "2013-04-07",
         endDate: "2023-11-05",
 
+        averageTime: "24m",
+        runtime: "35h",
+
         genres: ["Adventure", "Action", "Fantasy"],
         description: "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone. During the carnage that follows, soldier Eren Jaeger sees one of the creatures devour his mother, which leads him to vow that he will kill every Titan. He enlists some friends who survived to help him, and that group is humanity's last hope for avoiding extinction at the hands of the monsters.",
         creator: ["Hajime Isayama"],
         director:["Tetsurō Araki", "Yuichiro Hayashi "],
         screenwriter: ["Yasuko Kobayashi", "Hiroshi Seko"],
         studio: ["Wit Studio", "MAPPA"],
-        distributionStudio: ["Crunchyroll", "Adult Swim", "Netflix", "Hulu", "Amazon Prime Video"]
+        distributionStudio: ["Crunchyroll", "Adult Swim", "Netflix", "Hulu", "Amazon Prime Video"],
+
+        watchingStatus: "Finished"
     },
 
     {
@@ -139,16 +164,21 @@ const shows = [
         releaseDate: "2010-10-31",
         endDate: "2022-11-20",
 
+        averageTime: "45m",
+        runtime: "137h",
+
         genres: ["Drama", "Horror", "Sci-Fi"],
         description: "Based on the comic book series written by Robert Kirkman, this gritty drama portrays life in the months and years that follow a zombie apocalypse. A group of survivors travel in search of safety and security, constantly on the move in search of a secure home. But the pressure each day to stay alive sends many in the group to the deepest depths of human cruelty, and they soon discover that the overwhelming fear of the survivors can be more deadly than the zombies walking among them. At times, the interpersonal conflicts present a greater threat to their continuing survival than the walkers that roam the country.",
         creator: ["Robert Kirkman", "Frank Darabont", "Glen Mazzara", "Scott M. Gimple", "Angela Kang"],
         studio: ["AMC Studios", "Skybound Entertainment", "Valhalla Entertainment", "Cirlcle of Confusion", "Idiot Box Productions" ],
-        distributionStudio: ["AMC Studios", "Fox International Channels", "Netflix"]
+        distributionStudio: ["AMC Studios", "Fox International Channels", "Netflix"],
+
+        watchingStatus: "Watching"
     },
 
     {
         id: 7,
-        title: "Fullmetal Alchemist: Botherhood",
+        title: "Fullmetal Alchemist: Brotherhood",
         poster: "",
         createdAt: "2026-07-01",
         mediaType: "TV Show",
@@ -157,6 +187,9 @@ const shows = [
         progress: 100,
         favorite: true,
         rating: 9.6,
+
+        averageTime: "24m",
+        runtime: "26h",
 
         releaseDate: "2009-04-05",
         endDate: "2010-07-04",
@@ -167,7 +200,9 @@ const shows = [
         director: ["Yasuhiro Irie"],
         screenwriter: ["Hiroshi Ōnogi"],
         studio: ["Studio Bones", "Aniplex", "Square Enix"],
-        distributionStudio: ["Aniplex", "Aniplex of America", "Crunchyroll", "Funimation", "Adult Swim"]
+        distributionStudio: ["Aniplex", "Aniplex of America", "Crunchyroll", "Funimation", "Adult Swim"],
+
+        watchingStatus: "Finished"
     }
 ]
 

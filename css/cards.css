@@ -293,6 +293,7 @@
     font-size:8px; 
     border: 2px solid #b4b4b4;
     font-size: 13px;
+    
 }
 
 /*=======================================================
@@ -460,6 +461,130 @@
 }
 
 /*=======================================================
+                    Pop Up CARD 
+=======================================================*/
+
+.popUpCard{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+
+.popUpCardOverlay{
+    transform: translate(20px, 20px);
+}
+
+.popUpCardOverlay .progress{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popUpCardOverlay img{
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
+.bottomIcons{
+    display: flex;
+    transform: translate(35px, 35px);
+    gap: 15px;
+}
+
+.bottomIcons .rating{
+    width: 21px;
+    height: 25px;
+
+    font-size: 13px;
+    transform: translate(0px, -5px);
+}
+
+.bottomIcons .favoriteTrue, .bottomIcons .favoriteFalse{
+    transform: scale(1.2);
+    color:gold;
+    width: 20px;
+    height: 20px;
+}
+
+.bottomIcons .favoriteFalse{
+    color:#b4b4b4;
+}
+
+.bottomIcons .editIcon{
+    transform: translate(0px, -7px);
+    color: #b4b4b4;
+}
+
+.bottomIcons .plusIcon{
+    transform: translate(0px, -7px);
+    color: #b4b4b4;
+}
+
+.cardTitle {
+    transform: translate(0px, -7px);
+    font-size: 30px;
+}
+
+.creatorNames{
+    font-size: 18px;
+    width: 90%;
+    color: #b4b4b4;
+    transform: translate(-20px, -30px);
+
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardDiscription {
+    font-size: 16px;
+    width: 90%;
+    color: #b4b4b4;
+
+    transform: translate( 0px, -60px );
+
+    display: -webkit-box; 
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardInformation{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #b4b4b4;
+
+
+    transform: translate(-0px, -60px);
+}
+
+.advance{
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    color: #b4b4b4;
+}
+
+.popupGenre{
+    transform: translate(-0px, -60px);
+    width: 90%;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow: hidden;        /* Hide anything outside the container */
+    white-space: nowrap;
+}
+
+/*=======================================================
                     CARD ICONS
 =======================================================*/
 
@@ -518,6 +643,21 @@
     background:#7ed957;
     border-radius:5px;
 }
+/* =================================
+       WATCHING STATUS CLASSIFCATION COLORS
+   =================================*/
+.watching, .reading, .playing, .listening {color: #0081cc !important;}
+
+.finished{color: #7ed957 !important;}
+
+.dropped{color: #7a0000 !important;}
+
+.paused{color: #efc539 !important;}
+
+.planToWatch, .planToRead, .planToPlay, .planToListen {color: #9b9b9b !important;}
+
+.noPlanToWatch, .noPlanToRead, .noPlanToPlay, .noPlanToListen {color: #545454 !important;}
+
 
 /* =================================
        MEDIA CLASSIFCATION COLORS

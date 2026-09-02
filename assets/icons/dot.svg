@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="5"
+   height="5"
+   viewBox="0 0 5 5"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   sodipodi:docname="dot.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="35.1875"
+     inkscape:cx="3.9218472"
+     inkscape:cy="5.1012433"
+     inkscape:window-width="1870"
+     inkscape:window-height="1011"
+     inkscape:window-x="1970"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dasharray:none;stroke-miterlimit:2.1;stroke-linecap:square;stroke-width:4.286;stroke:currentColor;fill-opacity:1;fill:none;"
+       id="path1"
+       cx="2.5"
+       cy="2.5"
+       r="0.35714319" />
+    <path
+       style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dasharray:none;stroke-miterlimit:2.1;stroke-linecap:square;stroke-width:0.122;stroke:currentColor;fill-opacity:1;fill:currentColor;display:inline;"
+       d="M 2.4998335,0.64525977 C 1.7180166,0.61590969 0.99311628,1.1791932 0.73687807,1.9013958 0.52045162,2.5566434 0.67853583,3.3345126 1.1943273,3.8087255 1.7604616,4.4220317 2.76149,4.5384063 3.459647,4.085646 4.0537265,3.7252254 4.435657,3.0218877 4.3474134,2.3236013 4.3002842,1.5889231 3.7343298,0.93738906 3.0429618,0.71869449 2.8669727,0.66671596 2.6830577,0.64481559 2.4998335,0.64525977 Z"
+       id="path5" />
+  </g>
+</svg>
