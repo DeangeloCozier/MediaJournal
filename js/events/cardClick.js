@@ -12,7 +12,7 @@ document.addEventListener("click", function(event) {
         if (!popupCardClick) {
             popup.classList.add("hidden");
 
-            const mainContainer = document.querySelector(".mainHomeContent") || document.querySelector('.containerArea');
+            const mainContainer = document.querySelector('.mainHomeContent, .contentArea, #movie-container, #show-container, #game-container, #book-container, #song-container');
             mainContainer.classList.remove("is-blurry");
 
             return;
@@ -57,10 +57,14 @@ document.addEventListener("click", function(event) {
 });
 
 document.addEventListener('dblclick', (event) => {
-    const mainContainer = document.querySelector('.mainHomeContent') || document.querySelector('.containerArea');
+    if ( event.target.closest('.add-card')) return; //Prevents loading issues for characteristics that add card does not have
+
+
+    const mainContainer = document.querySelector('.mainHomeContent, .contentArea, #movie-container, #show-container,  #game-container, #book-container, #song-container');
     const popup = document.querySelector('#cardPopupOverlay');
 
     const card = event.target.closest('.card, .smallGridCard, .smallListCard, .listCard');
+
     if (card) {
         const id = Number(card.dataset.id);
         const type = card.dataset.type;

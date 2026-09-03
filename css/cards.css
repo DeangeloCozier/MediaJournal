@@ -502,11 +502,24 @@
     transform: translate(0px, -5px);
 }
 
+.bottomIcons .rating:hover{
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
 .bottomIcons .favoriteTrue, .bottomIcons .favoriteFalse{
     transform: scale(1.2);
     color:gold;
     width: 20px;
     height: 20px;
+}
+
+
+.bottomIcons .favoriteTrue:hover, .bottomIcons .favoriteFalse:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .bottomIcons .favoriteFalse{
@@ -518,9 +531,19 @@
     color: #b4b4b4;
 }
 
+.bottomIcons .editIcon:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .bottomIcons .plusIcon{
     transform: translate(0px, -7px);
     color: #b4b4b4;
+}
+
+.bottomIcons .plusIcon:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .cardTitle {
@@ -571,6 +594,13 @@
     top: 12px;
     right: 11px;
     color: #b4b4b4;
+}
+
+.advance:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    color: #888888;
+    border-radius: 20px;
 }
 
 .popupGenre{
