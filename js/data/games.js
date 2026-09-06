@@ -19,7 +19,12 @@ const games = [
         description: "After escaping execution, the last living Dragonborn must grow in strength and power to defeat the dragons that have once again begun to plague the land of Skyrim",
         creator: ["Bethesda Game Studios"],
         
-        watchingStatus: "Playing"
+        watchingStatus: "Playing",
+        status: "Completed",
+        sourceMaterial: "Original",
+        studio: ["Bethesda Game Studios"],
+        publishingStudio: ["Bethesda Softworks"],
+        tags: ["Lore Rich"]
     },
 
     {
@@ -42,7 +47,12 @@ const games = [
         description: "Kyle Crane is GRE agent who is tasked with recovering data from the overrun city of Harran that could cure the virus rampaging throughout the city. The virus transforms the victim into a zombie like creature or into special mutations of that. After getting bitten inside the city, Crane has to blend in with one of the two main factions of the city, while staying undercover to try and recover that data. But he may have bitten off more than he can chew, for when the nighttime comes everything changes. The zombies get faster and stronger, and new mutations called, Volatilles come out to ruin your day. Good night, good luck",
         creator: ["Techland"],
         
-        watchingStatus: "Plan To Play"
+        watchingStatus: "Plan To Play",
+        status: "Completed",
+        sourceMaterial: "Original",
+        studio: ["Techland"],
+        publishingStudio: ["Warner Bros."],
+        tags: ["Zombies", "Co-Op"]
     },
 
     {
@@ -65,7 +75,12 @@ const games = [
         description: "Set in the savage land of Cvstodia, a place where religion is the utmost importance in the eyes of the populace, superstitiion runs amok, and churches outnumber people two to on. You will find yourself in this hellish territory in the wake of the Age of Corruption.",
         creator: ["The Game Kitchen"],
 
-        watchingStatus: "Playing"
+        watchingStatus: "Playing",
+        status: "Completed",
+        sourceMaterial: "Original",
+        studio: ["The Game Kitchen"],
+        publishingStudio: ["Team17"],
+        tags: ["Gore", "Difficult"]
     },
 
     {
@@ -88,7 +103,12 @@ const games = [
         description: "Batman battles his archenemy, the Joker, who instigates an elaborate plot to seize control of Arkham Asylum, trapping Batman inside with may of his incarcerated foes. Batman finds himself having to come against some of the greatest enemies and several inmates as he sets out to stop the clown prince of crime. Batman must fight for his life and hekp all surviving police officers get out of and regain control of the Asylum.",
         creator: ["Rocksteady Studios"],
 
-        watchingStatus: "Paused"
+        watchingStatus: "Paused",
+        status: "Completed",
+        sourceMaterial: "DC Comics",
+        studio: ["Rocksteady Studios"],
+        publishingStudio: ["Warner Bros. Games"],
+        tags: ["Superhero", "Story Rich"]
     },
 
     {
@@ -111,7 +131,12 @@ const games = [
         description: "Minecragy is a 3D block-based sandbox video game where players explore endless, procedurally generated worlds, mine raw materials, craft tools, and build structures with complete freedom.",
         creator: ["Markus Persson","Mojang Studios"],
 
-        watchingStatus: "Playing"
+        watchingStatus: "Playing",
+        status: "Completed",
+        sourceMaterial: "Original",
+        studio: ["Mojang Studios"],
+        publishingStudio: ["Mojang Studios", "Xbox Game Studios"],
+        tags: ["Sandbox", "Crafting", "Relaxing", "Building"]
     },
 
     {
@@ -134,7 +159,12 @@ const games = [
         description: "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.",
         creator:["SCS Software"], 
 
-        watchingStatus: "Paused"
+        watchingStatus: "Paused",
+        status: "Ongoing",
+        sourceMaterial: "European Geography",
+        studio: ["SCS Software"],
+        publishingStudio: ["SCS Software"],
+        tags: ["Relaxing"]
     }, 
 
     {
@@ -157,7 +187,12 @@ const games = [
         description: "Many years after defeating GLaDOS, Chell finds herself once again in the labs of Aperture Science. She is found by Wheatley, a chatty personality core who wants to help her escape. Chell finds herself once again doing the same testing she did while she was with GLaDOS the first tim. With the help of Wheatley, Chell makes another attempt to escape, but GLaDOS has other plans...",
         creator:["Valve Corporation"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        studio: ["Valve"],
+        publishingStudio: ["Valve"],
+        tags: ["Comdey", "Story Rich"]
     },
 
     {
@@ -180,7 +215,12 @@ const games = [
         description: "The Portal Mod you've been waiting for. Delve into a new story with original characters, spamnning over 8 hours of gameplay and featureing over 40 new challenging test chambers which make use of new mechanics.",
         creator: ["Second Face Software"],
 
-        watchingStatus: "Dropped"
+        watchingStatus: "Dropped",
+        status: "Completed",
+        sourceMaterial: "Portal 2",
+        studio: ["Second_Reality"],
+        publishingStudio: ["Second_Reality"],
+        tags: ["Free to Play", "Mod", "Difficult"]
     }
 
 ]

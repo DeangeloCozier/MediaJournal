@@ -54,6 +54,21 @@ document.addEventListener("click", function(event) {
         console.log(message + ' Add Card was clicked');
         return;
     }
+
+    const card = event.target.closest('.card, .smallGridCard, .smallListCard, .listCard');
+
+    if (card) {
+        const id = Number(card.dataset.id);
+        const type = card.dataset.type;
+        const cardInfo = list.find(entry => entry.mediaType === type && entry.id === id);
+        
+        sessionStorage.setItem("mediaInfo", JSON.stringify(cardInfo)) 
+        console.log(JSON.stringify(cardInfo));
+
+        window.location.href = 'mediaPage.html';
+    }
+
+
 });
 
 document.addEventListener('dblclick', (event) => {

@@ -22,6 +22,16 @@ function renderHomeCards(data, containerId, createCard, addCardText) {
     container.innerHTML += createAddCard(addCardText);
 }
 
+function renderCard(data, containerId, createCard) {
+    const container = document.querySelector(`.${containerId}`);
+
+    if(!container) return;
+
+    container.innerHTML = "";
+
+    container.innerHTML += createCard(data);
+}
+
 function renderCollectionCards(data, containerId, createCard, addCardText, addCard) {
 
     const container = document.getElementById(containerId);
