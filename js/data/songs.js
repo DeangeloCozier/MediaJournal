@@ -23,7 +23,11 @@ const songs = [
         studio: ["Bad Vibes Forever"],
         distributionStudio: ["EMPIRE Distribution"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["EMPIRE Distribution"],
+        tags: ["SoundCloud Rap"]
     },
 
     {
@@ -50,7 +54,11 @@ const songs = [
         studio: ["Columbia Records"],
         distributionStudio: ["Sony Music Entertainment"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Columbia Records"],
+        tags: ["Chicaho Drill", "Melodic Rap"]
     },
 
     {
@@ -77,7 +85,11 @@ const songs = [
         studio: ["Only the Family"],
         distributionStudio: ["EMPIRE Distribution"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["EMPIRE Distribution"],
+        tags: ["Gangsta Rap", "Storytelling Rap"]
     },
 
     {
@@ -104,7 +116,11 @@ const songs = [
         studio: ["Dreamville Records", "Roc Nation", "ByStorm Entertainment"],
         distributionStudio: ["Columbia Records"],
 
-        watchingStatus: "Listening"
+        watchingStatus: "Listening",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Dreamville Records","Roc Nation", "Columbia Records"],
+        tags: ["Conscious Hip-Hop", "Boom Bap", "Contemporary Rap"]
     },
 
     {
@@ -131,7 +147,11 @@ const songs = [
         studio: ["pgLang"],
         distributionStudio: ["Interscope Records"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["PgLang", "Interscope Records"],
+        tags: ["West Coast Hip-Hop", "Conscious Rap", "Hardcore Hip-Hop"]
     },
 
     {
@@ -158,6 +178,10 @@ const songs = [
         studio: ["PH Recordings"],
         distributionStudio: ["Loma Vista Recordings"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["PH Recordings", "Loma Vista Recordings"],
+        tags: ["Experimental Hip-Hop", "Hardcore Rap", "Cloud Rap"]
     }
 ]

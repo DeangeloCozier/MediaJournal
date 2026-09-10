@@ -23,10 +23,15 @@ const shows = [
         creator: ["Vince Gilligan"],
         director: ["Vince Gilligan", "Michelle MacLaren", "Bryan Cranston"],
         screenwriter: ["Peter Gould", "Thomas Schnauz", "Moira Walley-Beckett", "Gennifer Hutchison", "George Mastras"],
-        studio: ["Sony Pictures Television"],
+        studio: ["Sony Pictures Television", "High Bridge"],
         distributionStudio: ["AMC", "Netflix"], 
 
-        watchingStatus: "Paused"
+        watchingStatus: "Paused",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["AMC"],
+        tags: ["Neo-Western"]
+
 
     },
 
@@ -57,7 +62,11 @@ const shows = [
         studio: ["Warner Bros. Television", "CBS Television Studios", "Alloy Entertainment", "Bonanza Productions", "My So-Called Company"],
         distributionStudio: ["CW Network", "Warner Bros. Television Distribution"],
 
-        watchingStatus: "Dropped"
+        watchingStatus: "Dropped",
+        status: "Completed",
+        sourceMaterial: "Spin-Off from The Vampire Diaries",
+        publishingStudio: ["The CW", "Warner Bros."],
+        tags: ["Supernatural", "Vampires"]
     },
 
     {
@@ -88,7 +97,11 @@ const shows = [
         studio: ["Nipon Television", "VAP", "Forecast Communications", "Madhouse"],
         distributionStudio: ["Sentai Filmworks", "Crunchyroll"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Based on the Manga \"Parasyte the Maxim\"",
+        publishingStudio: ["Nippon TV", "Sentai Filmworks"],
+        tags: ["Body Horror"]
     },
 
     {
@@ -117,7 +130,11 @@ const shows = [
         studio: ["Nickelodeon Animation Studio"],
         distributionStudio: ["Paramount Global", "Netflix", "Amazon Prime Video"],
 
-        watchingStatus: "Paused"
+        watchingStatus: "Paused",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Nickolodeon"],
+        tags: ["Coming-of-Age"]
     },
 
     {
@@ -146,7 +163,12 @@ const shows = [
         studio: ["Wit Studio", "MAPPA"],
         distributionStudio: ["Crunchyroll", "Adult Swim", "Netflix", "Hulu", "Amazon Prime Video"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Based on the Manga \"Attack on Titan\" by ",
+        publishingStudio: ["Kodansha", "Pony Canyon"],
+        tags: ["Dark Fantasy", "Post-Apocalypse"]
+
     },
 
     {
@@ -173,7 +195,11 @@ const shows = [
         studio: ["AMC Studios", "Skybound Entertainment", "Valhalla Entertainment", "Cirlcle of Confusion", "Idiot Box Productions" ],
         distributionStudio: ["AMC Studios", "Fox International Channels", "Netflix"],
 
-        watchingStatus: "Watching"
+        watchingStatus: "Watching",
+        status: "Completed",
+        sourceMaterial: "Based on the Comic Book \"The Walking Dead\"",
+        publishingStudio: ["AMC Networks"],
+        tags: ["Zombies","Apocalypse", "Survival"]
     },
 
     {
@@ -202,7 +228,11 @@ const shows = [
         studio: ["Studio Bones", "Aniplex", "Square Enix"],
         distributionStudio: ["Aniplex", "Aniplex of America", "Crunchyroll", "Funimation", "Adult Swim"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Based on the Manga \"Attack on Titan\"",
+        publishingStudio: ["Aniplex", "MBS"],
+        tags: ["Dark Fantasy", "Steampunk", "Philosophy"]
     }
 ]
 

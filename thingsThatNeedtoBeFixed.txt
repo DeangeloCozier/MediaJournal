@@ -1,0 +1,5 @@
+Card Click: 
+
+Double click and single click trigger the same events and the result is only the single click and the 
+double click can only be seen by going back. Not working as expected. Needs to be fixed where either a double click is registered
+or a single click is registered but not both at the same time.

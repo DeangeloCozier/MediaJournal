@@ -24,7 +24,11 @@ const movies = [
         studio: ["DreamWorks Animation"],
         distributionStudio: ["Paramount Pictures"],
 
-        watchingStatus: "Dropped"
+        watchingStatus: "Dropped",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Paramount Pictures"],
+        tags: ["Martial Arts"]
     },
 
     {
@@ -52,7 +56,11 @@ const movies = [
         studio: ["Pixel Animation Studios"],
         distributionStudio: ["Walt Disney Pictures"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Buena Vista Pictures"],
+        tags: ["Racing"]
     },
 
     {
@@ -80,7 +88,11 @@ const movies = [
         studio:["20th Century Fox", "Marvel Entertainment", "Maximum Effort"],
         distributionStudio: ["20th Century Fox"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Comic Book Characters",
+        publishingStudio: ["20th Century Fox"],
+        tags: ["Martial Arts"]
     },
 
     {
@@ -108,7 +120,11 @@ const movies = [
         studio:["Pixar Studios"],
         distributionStudio: ["Walt Disney Pictures"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Walt Disney Pictures"],
+        tags: [""]
     },
 
     {
@@ -134,7 +150,11 @@ const movies = [
         studio: ["Studio Ghibli"],
         distributionStudio: ["Toho", "Walt Disney Studios"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Toho", "Disney"],
+        tags: ["Family", "Fantasy", "Animation"]
     },
 
     {
@@ -162,7 +182,11 @@ const movies = [
         studio: ["Warner Bros. Pictures", "DC Films", "Village Roadshow Pictures", "BRON Creative"],
         distributionStudio: ["Warner Bros. Pictures"],
 
-        watchingStatus: "Watching"
+        watchingStatus: "Watching",
+        status: "Completed",
+        sourceMaterial: "Comic Book Characters",
+        publishingStudio: ["Warner Bros. Pictures"],
+        tags: ["Thriller", "Psychological"]
 
     },
 
@@ -186,10 +210,14 @@ const movies = [
 
         description: "Two years before the Civil War, Django, a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie, where Django's long-lost wife is still a slave.",
         creator: ["Quentin Tarantino"],
-        studio: ["The Weinstein Company", "SonSy Pictures Releasing", "A Band Apart"],
+        studio: ["The Weinstein Company", "Sony Pictures Releasing", "A Band Apart"],
         distributionStudio: ["The Weinstein Company", "Sony Pictures Releasing"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["The Weinstein Company", "Sony"],
+        tags: [""]
     },
 
     {
@@ -215,7 +243,11 @@ const movies = [
         studio: ["Blumhouse Production", "Monkeypaw Productions", "QC Entertainment"],
         distributionStudio: ["Universal Pictures"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Universal Pictures"],
+        tags: ["Psychological"]
 
     },
 
@@ -243,7 +275,11 @@ const movies = [
         studio: ["Kennedy Miller Mitchell", "Village Roadshow Pictures"],
         distributionStudio: ["Warner Bros. Pictures"],
 
-        watchingStatus: "No Plan To Watch"
+        watchingStatus: "No Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Waner Bros. Pictures"],
+        tags: ["Apocalyptic", "Post-Apocalyptic"]
     },
 
     {
@@ -270,7 +306,11 @@ const movies = [
         studio: ["20th Century Fox", "Marvel Entertainment", "Kinberg Genre", "Hutch Parker Entertainment", "The Donners' Company"],
         distributor:["20th Century Fox"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Comic Book Characters",
+        publishingStudio: ["20th Century Fox"],
+        tags: ["Superhero"]
     },
 
     {
@@ -298,7 +338,11 @@ const movies = [
         studio: ["Red Granite Pictures", "Appian Way Productions", "Sikelia Productions"],
         distributionStudio: ["Paramount Pictures", "Universal Pictures"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Jordan Belfort \"The Wolf of Wall Street\" Autobiographical Memoir",
+        publishingStudio: ["Paramount Pictures"],
+        tags: ["Crime"]
     },
 
     {
@@ -325,7 +369,11 @@ const movies = [
         studio: ["Eon Production", "Metro-Goldwyn-Mayer Pictures", "Columbia Pictures"],
         distributionStudio:["Soney Pictures Releasing"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Original",
+        publishingStudio: ["Sony Pictures Releasing", "Metro-Goldwyn-Mayer Pictures"],
+        tags: ["Spy"]
     },
 
     {
@@ -352,7 +400,11 @@ const movies = [
         studio: ["Legendary Pictures", "DC Entertainment", "Syncopy Inc."],
         distributionStudio: ["Warner Bros. Pictures"],
 
-        watchingStatus: "Finished"
+        watchingStatus: "Finished",
+        status: "Completed",
+        sourceMaterial: "Comic Book Character",
+        publishingStudio: ["Warner Bors. Pictures"],
+        tags: ["Superhero"]
     },
 
     {
@@ -377,7 +429,11 @@ const movies = [
         director: ["Matt Reeves"],
         screenwriter: ["Mark Bomback", "Rick Jaffa", "Amanda Silver"],
 
-        watchingStatus: "Plan To Watch"
+        watchingStatus: "Plan To Watch",
+        status: "Completed",
+        sourceMaterial: "Pierre Boulle's 1963 \"Planet of the Apes\" Novel",
+        publishingStudio: ["20th Century FOx"],
+        tags: [""]
     }
 
 ];
